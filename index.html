@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Главная страница Pro mebel</title>
+  <link rel="shortcut icon" href="" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" href="css/uikit.min.css" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- header__modal -->
+  <div id="header__modal" class="uk-modal">
+    <div class="uk-modal-dialog">
+      <a class="uk-modal-close"><span></span></a>
+      <div class="form__heading">
+        <span>ЗАКАЗАТЬ ЗВОНОК</span>
+      </div>
+      <div class="form__body">
+        <span>Перезвоним в течение 5 минут</span>
+        <span>Оставьте свой контактный телефон:</span>
+        <form>
+          <p>
+            <input type="tel" placeholder="+7">
+          </p>
+          <span class="info">или e-mail:</span>
+          <p>
+            <input type="email" placeholder="Электронный ящик">
+          </p>
+          <p>
+            <input type="checkbox" name="modal-checkbox" id="modal-checkbox" checked>
+            <label for="modal-checkbox">Согласен на обработку моих данных</label>
+          </p>
+          <span class="info">Мы не рассылаем спам и смс</span>
+          <input type="submit" value="Заказать">
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- header -->
+  <header id="header">
+    <div class="top__row">
+      <div class="conteiner">
+        <div class="location">
+          <a href="">Москва</a>
+        </div>
+        <nav class="header__top-menu">
+          <ul>
+            <li><a href="">О компании</a></li>
+            <li><a href="">Cхема работы</a></li>
+            <li><a href="">Партнёрам</a></li>
+            <li><a href="">Материалы</a></li>
+            <li><a href="">Блог</a></li>
+            <li><a href="">Услуги</a></li>
+            <li><a href="">Отзывы</a></li>
+          </ul>
+        </nav>
+        <div class="opening__hours">
+          <span>Мы на связи:</span>
+          <span>с 10:00 до 20:00 / пн-пт</span>
+        </div>
+        <div class="mail">
+          <span>Отправляйте заявки:</span>
+          <span><a href="mailto:">zakaz@mebel2biz.ru</a></span>
+        </div>
+      </div>
+    </div>
+    <div class="bottom__row">
+      <div class="conteiner">
+        <div class="logo">
+          <img src="img/logo.png" alt="icon logo">
+        </div>
+        <nav class="header__bottom-menu">
+          <ul class="menu">
+            <li id="first_item" class="menu__item"><a href="">Каталог</a><span class="activated"></span></li>
+            <li class="menu__item"><a href="">Работы</a></li>
+            <li class="menu__item"><a href="">Акции</a></li>
+            <li class="menu__item"><a href="">Контакты</a></li>
+          </ul>
+          <div class="sub__navigation">
+            <div class="conteiner">
+              <div class="left">
+                <ul>
+                  <li><a href="">О компании</a></li>
+                  <li><a href="">Cхема работы</a></li>
+                  <li><a href="">Партнёрам</a></li>
+                  <li><a href="">Материалы</a></li>
+                  <li><a href="">Блог</a></li>
+                  <li><a href="">Услуги</a></li>
+                  <li><a href="">Отзывы</a></li>
+                </ul>
+              </div>
+              <div class="right">
+                <div class="heading">
+                  <span>Каталог</span>
+                  <div class="form__search">
+                    <form>
+                      <input type="s" name="search">
+                      <button>
+                        <img src="img/icon/search.png" alt="search icon">
+                      </button>
+                    </form>
+                  </div>
+                </div>
+                <div class="category">
+                  <div class="category__box-menu">
+
+                    <ul class="category__menu-items" data-menu-target>
+                      <li class="item" data-filter=".item1"><a href="">Стойки ресепшн1</a></li>
+                      <li class="item" data-filter=".item2"><a href="">Стойки ресепшн2</a></li>
+                      <li class="item" data-filter=".item3"><a href="">Стойки ресепшн3</a></li>
+                      <li class="item" data-filter=".item4"><a href="">Стойки ресепшн4</a></li>
+                    </ul>
+
+                    <div class="box__sub-menu" data-subMenu-target>
+                      <div class="sub__item item1">
+                        <ul>
+                          <li><a href="#">Мебель для персонала1</a>
+                          <li><a href="#">Мебель для персонала1</a>
+                          <li><a href="#">Мебель для персонала1</a>
+                          <li><a href="#">Мебель для персонала1</a>
+                        </ul>
+                      </div>
+                      <div class="sub__item item2">
+                        <ul>
+                          <li><a href="#">Мебель для персонала2</a>
+                            <ul class="sub__item-nextLevel">
+                              <li><a href="">Все1</a></li>
+                              <li><a href="">Столы для персонала1</a></li>
+                              <li><a href="">Угловые столы1</a></li>
+                              <li><a href="">На металокаркасе1</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="#">Мебель для персонала3</a>
+                            <ul class="sub__item-nextLevel">
+                              <li><a href="">Все2</a></li>
+                              <li><a href="">Столы для персонала2</a></li>
+                              <li><a href="">Угловые столы2</a></li>
+                              <li><a href="">На металокаркасе2</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="#">Мебель для персонала4</a>
+                            <ul class="sub__item-nextLevel">
+                              <li><a href="">Все4</a></li>
+                              <li><a href="">Столы для персонала4</a></li>
+                              <li><a href="">Угловые столы4</a></li>
+                              <li><a href="">На металокаркасе4</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="#">Мебель для персонала5</a>
+                            <ul class="sub__item-nextLevel">
+                              <li><a href="">Все5</a></li>
+                              <li><a href="">Столы для персонала5</a></li>
+                              <li><a href="">Угловые столы5</a></li>
+                              <li><a href="">На металокаркасе5</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="sub__item item3">
+                        <ul>
+                          <li><a href="#">Мебель для персонала3</a>
+                          <li><a href="#">Мебель для персонала3</a>
+                          <li><a href="#">Мебель для персонала3</a>
+                          <li><a href="#">Мебель для персонала3</a>
+                        </ul>
+                      </div>
+                      <div class="sub__item item4">
+                        <ul>
+                          <li><a href="#">Мебель для персонала4</a>
+                            <ul class="sub__item-nextLevel">
+                              <li><a href="">Все1</a></li>
+                              <li><a href="">Столы для персонала1</a></li>
+                              <li><a href="">Угловые столы1</a></li>
+                              <li><a href="">На металокаркасе1</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="#">Мебель для персонала4</a>
+                            <ul class="sub__item-nextLevel">
+                              <li><a href="">Все2</a></li>
+                              <li><a href="">Столы для персонала2</a></li>
+                              <li><a href="">Угловые столы2</a></li>
+                              <li><a href="">На металокаркасе2</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="#">Мебель для персонала4</a>
+                            <ul class="sub__item-nextLevel">
+                              <li><a href="">Все4</a></li>
+                              <li><a href="">Столы для персонала4</a></li>
+                              <li><a href="">Угловые столы4</a></li>
+                              <li><a href="">На металокаркасе4</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="#">Мебель для персонала4</a>
+                            <ul class="sub__item-nextLevel">
+                              <li><a href="">Все4-5</a></li>
+                              <li><a href="">Столы для персонала4-5</a></li>
+                              <li><a href="">Угловые столы4-5</a></li>
+                              <li><a href="">На металокаркасе4-5</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="phone">
+          <p>
+            <span><a href="tel:8 (800) 550-93-96">8 (800) 550-93-96</a></span>
+            <span>бесплатно по России</span>
+          </p>
+          <p>
+            <span><a href="tel:8 (495) 150-72-86">8 (495) 150-72-86</a></span>
+            <span>Whatsapp / Telegram</span>
+          </p>
+        </div>
+        <div class="btn-request__call">
+          <a data-uk-modal href="#header__modal">Заказать звонок</a>
+          <div class="mobile__content">
+            <span>
+              <img src="img/mobile/email.png" alt="icon">
+            </span>
+          </div>
+          <div class="burger"><span></span></div>
+        </div>
+        <div class="mobile__content-social">
+          <ul>
+            <li><a href="#"><img src="img/mobile/whats_up.png" alt="social icon">Whatsapp</a></li>
+            <li><a href="#"><img src="img/mobile/telegram_mobile.png" alt="social icon">Telegram</a></li>
+            <li><a href="mailto:zakaz@mebel2biz.ru"><img src="img/mobile/email-icon.png"
+                  alt="social icon">zakaz@mebel2biz.ru</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </header>
+  <!-- main -->
+  <main>
+    <!-- first__screen -->
+  </main>
+  <!-- footer -->
+  <footer id="footer">
+    <div class="conteiner">
+      <div class="footer__item">
+        <div class="logo">
+          <img src="img/logo_footer.png" alt="logo icon">
+        </div>
+        <div class="search">
+          <form>
+            <input type="s" name="s" id="s" placeholder="Поиск">
+            <button class="search__btn" type="submit">
+              <img src="img/icon/search.png" alt="search button icon">
+            </button>
+          </form>
+        </div>
+        <div class="footer__signature">
+          <span>© 2013-2019, ООО «Бизнес Мебель» Все права защищены. Копирование любых материалов только с письменного
+            разрешения владельцев сайта.</span>
+        </div>
+      </div>
+      <nav class="footer__nav">
+        <ul>
+          <li><a aria-current="page" href="">О компании</a></li>
+          <li><a href="">Каталог мебели</a></li>
+          <li><a href="">Наши работы</a></li>
+          <li><a href="">Материалы</a></li>
+          <li><a href="">Схема работы</a></li>
+          <li><a href="">Карта сайта</a></li>
+        </ul>
+        <ul>
+          <li><a href="">Акции</a></li>
+          <li><a href="">Блог</a></li>
+          <li><a href="">Партнерам</a></li>
+          <li><a href="">Отзывы</a></li>
+          <li><a href="">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="footer__contacts">
+        <div class="contacts__items">
+          <div class="item">
+            <p>
+              <span>Бесплатно по России</span><br>
+              <span><a href="tel:8 (800) 550-93-96">8 (800) 550-93-96</a></span>
+            </p>
+            <p>
+              <span>Мы на связи:</span><br>
+              <span>с 10:00 до 20:00 / пн-пт</span>
+            </p>
+          </div>
+          <div class="item">
+            <p>
+              <a href="tel:8 (495) 150-72-86">8 (495) 150-72-86</a>
+            </p>
+            <p>
+              <span>Отправляйте заявки:</span><br>
+              <span><a href="mailto:zakaz@mebel2biz.ru">zakaz@mebel2biz.ru</a></span>
+            </p>
+          </div>
+        </div>
+        <div class="social">
+          <span>Подписывайтесь:</span>
+          <ul>
+            <li><a href="#"><img src="img/icon/vk.png" alt="social icon"></a></li>
+            <li><a href="#"><img src="img/icon/facebook.png" alt="social icon"></a></li>
+            <li><a href="#"><img src="img/icon/twich.png" alt="social icon"></a></li>
+            <li><a href="#"><img src="img/icon/insta.png" alt="social icon"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/jquery/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="js/uikit.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
