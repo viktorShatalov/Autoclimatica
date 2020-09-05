@@ -29,12 +29,13 @@
         <picture class="logo">
           <img src="img/logos/logo.png" alt="Логотип автоклиматика">
         </picture>
+        <figcaption>автоклиматика</figcaption>
         <div class="header__logo-bottom">
-          <picture>
+          <picture class="left__img">
             <img src="img/logos/logo_partners2.png" alt="логотип партнеров">
           </picture>
           <span>Официальный<br> дилер</span>
-          <picture>
+          <picture class="right__img">
             <img src="img/logos/logo_partners1.png" alt="логотип партнеров">
           </picture>
         </div>
@@ -46,7 +47,7 @@
     <section class="header__bottom__row container">
       <nav class="header__menu">
         <ul class="menu__items">
-          <li><a href="">Главная</a></li>
+          <li><a href="" aria-current="page">Главная</a></li>
           <li><a href="">Каталог</a></li>
           <li><a href="">Контакты</a></li>
           <li><a href="">Доставка и оплата</a></li>
@@ -75,49 +76,51 @@
       </div>
       <section class="category__content">
         <aside class="left__sidebar">
-          <section class="category__navigation">
-            <nav class="heating__systems">
-              <div class="head">
-                <span>Системы отопления</span>
-              </div>
-              <ul>
-                <li><a href="">Предпусковые обогреватели</a></li>
-                <li><a href="">Автономные отопители</a></li>
-                <li><a href="">Пульты управления</a></li>
-                <li><a href="">Запчасти</a></li>
-                <li><a href="">Установка и ремонт</a></li>
-                <li><a href="">Дооборудование догревателей</a></li>
-              </ul>
-            </nav>
-            <nav class="сooling__systems">
-              <div class="head">
-                <span>Системы охлаждения</span>
-              </div>
-              <ul>
-                <li><a href="">Кондиционеры WEBASTO</a></li>
-                <li><a href="">Кондиционеры Eurostar</a></li>
-                <li><a href="">Рефрежираторы DAIVIA</a></li>
-                <li><a href="">Ремонт кондиционеров</a></li>
-                <li><a href="">Ремонт компрессора кондиционера</a></li>
-                <li><a href="">Диагностика и заправка</a></li>
-                <li><a href="">Установка кондиционеров</a></li>
-              </ul>
-            </nav>
-            <nav class="equipment">
-              <div class="head">
-                <span>Оборудование</span>
-              </div>
-              <ul>
-                <li><a href="">Подогрев сидений</a></li>
-                <li><a href="">Подъемные люки</a></li>
-                <li><a href="">Сдвижные люки</a></li>
-                <li><a href="">Подогрев дизельного топлива</a></li>
-              </ul>
-            </nav>
-          </section>
-          <section class="category__filtr">
-            <span>Сортировка</span>
-            <p>Тут woof-filtr</p>
+          <section class="left__sidebar-decoration">
+            <section class="category__navigation">
+              <nav class="heating__systems">
+                <div class="head">
+                  <span>Системы отопления</span>
+                </div>
+                <ul>
+                  <li><a href="">Предпусковые обогреватели</a></li>
+                  <li><a href="">Автономные отопители</a></li>
+                  <li><a href="">Пульты управления</a></li>
+                  <li><a href="">Запчасти</a></li>
+                  <li><a href="">Установка и ремонт</a></li>
+                  <li><a href="">Дооборудование догревателей</a></li>
+                </ul>
+              </nav>
+              <nav class="сooling__systems">
+                <div class="head">
+                  <span>Системы охлаждения</span>
+                </div>
+                <ul>
+                  <li><a href="">Кондиционеры WEBASTO</a></li>
+                  <li><a href="">Кондиционеры Eurostar</a></li>
+                  <li><a href="">Рефрежираторы DAIVIA</a></li>
+                  <li><a href="">Ремонт кондиционеров</a></li>
+                  <li><a href="">Ремонт компрессора кондиционера</a></li>
+                  <li><a href="">Диагностика и заправка</a></li>
+                  <li><a href="">Установка кондиционеров</a></li>
+                </ul>
+              </nav>
+              <nav class="equipment">
+                <div class="head">
+                  <span>Оборудование</span>
+                </div>
+                <ul>
+                  <li><a href="">Подогрев сидений</a></li>
+                  <li><a href="">Подъемные люки</a></li>
+                  <li><a href="">Сдвижные люки</a></li>
+                  <li><a href="">Подогрев дизельного топлива</a></li>
+                </ul>
+              </nav>
+            </section>
+            <section class="category__filtr">
+              <span>Сортировка</span>
+              <p>Тут woof-filtr</p>
+            </section>
           </section>
           <article class="stock__items">
             <article class="stock">
@@ -377,25 +380,33 @@
                 На автомобилях с дизельным двигателем подогрев во время движения дает возможность поддерживать рабочую
                 температуру в любой мороз. Поэтому российские владельцы автомобилей все чаще выбирают предпусковой
                 подогреватель двигателя и салона Webasto / Вебасто, автономно работающий на топливе из бака автомобиля.
+              </p>
+              <p>
                 Предпусковой подогреватель двигателя Вебасто это небольшой отопитель, устанавливаемый вне салона
                 автомобиля, например под капотом автомобиля, в бампере или под крылом. Предпусковой подогреватель
                 Вебасто
                 подключается к системе охлаждающей жидкости двигателя, блок управления отопителя подключается к
                 электрике
-                автомобиля, а топливозаборник устанавливается в топливный бак автомобиля.</p>
+                автомобиля, а топливозаборник устанавливается в топливный бак автомобиля.
+              </p>
             </section>
             <section>
               <h2>Преимущества установки предпускового подогревателя</h2>
               <p>Предпусковой подогреватель Вебасто влияет на вашу безопасность, улучшает комфортабельность вашего
                 автомобиля, улучшает показатели экономичности, долговечности и экологической чистоты автомобиля, потому
-                что перед поездкой: - двигатель автомобиля прогрет и заводится без лишних усилий, это сильно понижает
-                потребление топлива, снижает нагрузку на аккумулятор (что немаловажно на морозе), уменьшает износ
-                двигателя и объём вредных выбросов в атмосферу и конечно экономит ваше время; - прогретый салон,
-                повышает
-                комфорт управления автомобилем, улучшает вашу реакцию и дает возможность избавиться от верхней одежды,
-                чтобы беспроблемно воспользоваться ремнем безопасности; - оттаявшие стекла избавят вас от нудного
-                каждодневного ритуала расчистки автомобиля, а свободные ото льда дворники дадут хороший обзор с самого
-                начала поездки.</p>
+                что перед поездкой: </p>
+              <ul>
+                <li>- двигатель автомобиля прогрет и заводится без лишних усилий, это сильно понижает
+                  потребление топлива, снижает нагрузку на аккумулятор (что немаловажно на морозе), уменьшает износ
+                  двигателя и объём вредных выбросов в атмосферу и конечно экономит ваше время;</li>
+                <li>- прогретый салон,
+                  повышает
+                  комфорт управления автомобилем, улучшает вашу реакцию и дает возможность избавиться от верхней одежды,
+                  чтобы беспроблемно воспользоваться ремнем безопасности;</li>
+                <li>- оттаявшие стекла избавят вас от нудного
+                  каждодневного ритуала расчистки автомобиля, а свободные ото льда дворники дадут хороший обзор с самого
+                  начала поездки.</li>
+              </ul>
             </section>
             <section class="category__description-third">
               <article>
@@ -424,7 +435,41 @@
   </main>
   <!-- footer -->
   <footer id="footer">
-
+    <div class="footer__items container">
+      <div class="footer__item">
+        <picture class="logo">
+          <img src="img/logos/logo.png" alt="Логотип автоклиматика">
+        </picture>
+        <figcaption>автоклиматика</figcaption>
+      </div>
+      <nav class="footer__item">
+        <ul class="footer__menu__items">
+          <li><a href="" aria-current="page">Главная</a></li>
+          <li><a href="">Каталог</a></li>
+          <li><a href="">Контакты</a></li>
+          <li><a href="">Доставка и оплата</a></li>
+          <li><a href="">FAQ</a></li>
+        </ul>
+      </nav>
+      <address class="footer__item">
+        <a class="icon__link mail" href="mailto:info@diavia.ru" target="_blank">info@diavia.ru</a>
+        <br>
+        <p class="icon__link phone">
+          <a href="tel:+7(495)7412445">+7 (495) 741-24-45</a><br>
+          <a href="tel:+7(495)1429654">+7 (495) 142-96-54</a>
+        </p>
+        <a href="" class="icon__link location" target="_balnk">г.Москва, ул. Авиамоторная, д.48</a>
+        <a href="" class="icon__link location" target="_balnk">г.Москва, МКАД 74 км, д.5<br> (внешняя сторона)</a>
+        <picture class="card__icon">
+          <img src="img/icon/mastercard.png" alt="логотип mastercard">
+          <img src="img/icon/maestro.png" alt="логотип maestro">
+          <img src="img/icon/visa.png" alt="логотип visa">
+        </picture>
+      </address>
+    </div>
+    <div class="footer__signature container">
+      <small>2020 Разработка сайтов <a href="https://div-head.ru/">div-head.ru</a>.Все права защищены</small>
+    </div>
   </footer>
 
   <script src="js/jquery/jquery.min.js"></script>
