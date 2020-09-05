@@ -15,35 +15,35 @@
 
   <!-- header -->
   <header id="header">
-    <div class="header__top__row container">
-      <div class="form__search">
-        <span class="form__search-description">Быстрый поиск</span>
+    <section class="header__top__row container">
+      <div class="header__search">
         <form>
+          <label class="header__search-description">Быстрый поиск</label>
           <input type="s" name="search" placeholder="Введите номер/название запчасти">
           <button></button>
         </form>
       </div>
-    </div>
-    <div class="header__center__row container">
+    </section>
+    <section class="header__center__row container">
       <div class="header__logo">
-        <picture>
-          <img src="img/logo.png" alt="Логотип автоклиматика">
+        <picture class="logo">
+          <img src="img/logos/logo.png" alt="Логотип автоклиматика">
         </picture>
+        <div class="header__logo-bottom">
+          <picture>
+            <img src="img/logos/logo_partners2.png" alt="логотип партнеров">
+          </picture>
+          <span>Официальный<br> дилер</span>
+          <picture>
+            <img src="img/logos/logo_partners1.png" alt="логотип партнеров">
+          </picture>
+        </div>
       </div>
       <div class="header__center__row-description">
         <span>Комфорт в вашем автомобиле</span>
       </div>
-    </div>
-    <div class="header__bottom__row container">
-      <div class="header__bottom__row-left">
-        <picture>
-          <img src="img/logo_partners1.png" alt="логотип партнеров">
-        </picture>
-        <span>Официальный<br> дилер</span>
-        <picture>
-          <img src="img/logo_partners2.png" alt="логотип партнеров">
-        </picture>
-      </div>
+    </section>
+    <section class="header__bottom__row container">
       <nav class="header__menu">
         <ul class="menu__items">
           <li><a href="">Главная</a></li>
@@ -57,382 +57,374 @@
         <a href="">
           <button class="cart__btn">
             <picture>
-              <img src="img/cart.png" alt="картинка корзины интернет магазина автоклиматика">
+              <img src="img/icon/cart.png" alt="картинка корзины интернет магазина автоклиматика">
             </picture>
             <span class="basket-btn__counter">1</span>
           </button>
         </a>
       </div>
-    </div>
+    </section>
   </header>
   <!-- main -->
   <main>
-    <section id="category">
-      <div class="container">
-        <!-- breadcumps -->
-        <div id="breadcumbs">
-          <ul class="container">
-            <li>
-              <a href="#">Главная</a>
-            </li>
-            <li>
-              <a href="#">Каталог</a>
-            </li>
-            <li>
-              <a href="#">next page</a>
-            </li>
-          </ul>
-        </div>
-        <div class="category__content">
-          <div class="left__sidebar">
-            <ul>
-              <li class="item">
-                <ul>
-                  <li class="button active"><a href="#">Категория простая</a></li>
-                  <li class="dropdown">
-                    <ul>
-                      <li><a href="#">Парфюмерия </a></li>
-                      <li><a href="#">Ароматы для нее</a></li>
-                      <li><a href="#">Подкатегория с длинным названием</a></li>
-                      <li><a href="#">Подкатегория</a></li>
-                    </ul>
-                  </li>
-                </ul>
+    <section id="category" class="container">
+      <div class="heading">
+        <h1>
+          Отопители.<br> Кондиционеры.<br> Автомобильные люки.
+        </h1>
+      </div>
+      <section class="category__content">
+        <aside class="left__sidebar">
+          <section class="category__navigation">
+            <nav class="heating__systems">
+              <div class="head">
+                <span>Системы отопления</span>
+              </div>
+              <ul>
+                <li><a href="">Предпусковые обогреватели</a></li>
+                <li><a href="">Автономные отопители</a></li>
+                <li><a href="">Пульты управления</a></li>
+                <li><a href="">Запчасти</a></li>
+                <li><a href="">Установка и ремонт</a></li>
+                <li><a href="">Дооборудование догревателей</a></li>
+              </ul>
+            </nav>
+            <nav class="сooling__systems">
+              <div class="head">
+                <span>Системы охлаждения</span>
+              </div>
+              <ul>
+                <li><a href="">Кондиционеры WEBASTO</a></li>
+                <li><a href="">Кондиционеры Eurostar</a></li>
+                <li><a href="">Рефрежираторы DAIVIA</a></li>
+                <li><a href="">Ремонт кондиционеров</a></li>
+                <li><a href="">Ремонт компрессора кондиционера</a></li>
+                <li><a href="">Диагностика и заправка</a></li>
+                <li><a href="">Установка кондиционеров</a></li>
+              </ul>
+            </nav>
+            <nav class="equipment">
+              <div class="head">
+                <span>Оборудование</span>
+              </div>
+              <ul>
+                <li><a href="">Подогрев сидений</a></li>
+                <li><a href="">Подъемные люки</a></li>
+                <li><a href="">Сдвижные люки</a></li>
+                <li><a href="">Подогрев дизельного топлива</a></li>
+              </ul>
+            </nav>
+          </section>
+          <section class="category__filtr">
+            <span>Сортировка</span>
+            <p>Тут woof-filtr</p>
+          </section>
+          <article class="stock__items">
+            <article class="stock">
+              <span class="stock__pseudo">АКЦИЯ</span>
+              <b class="stock__name">WEBASTO</b>
+              <h3>ЭКОНОМЬ В УДОВОЛЬСТВИЕ!<br> Специальная цена на комплект и <br>установку отопителей Webasto</h3>
+              <p>Цена комплекта отопителя c установкой для предпусковых подогревателей</p>
+              <p>
+                <span>Webasto Thermo Top Start 35 (5кВт)</span>
+                <span class="stock__price">900р</span>
+              </p>
+              <p>
+                <span>Webasto Thermo Top Comfort+ (5кВт)</span>
+                <span class="stock__price">53 700р</span>
+              </p>
+            </article>
+            <article class="stock">
+              <span class="stock__pseudo">АКЦИЯ</span>
+              <b class="stock__name">EBERSPACHER</b>
+              <h3>НОВЕЙШАЯ ТЕХНОЛОГИЯ ТЕПЛА! Специальная цена на комплект и установку отопителей
+                Eberspacher
+              </h3>
+              <p>Цена комплекта отопителя c установкой для предпусковых подогревателей</p>
+              <p>
+                <span>EBERSPACHER HYDRONIC 3 (4кВт) Для прогрева двигателя и салона малокубатурных автомобилей</span>
+                <span class="stock__price">39 900р</span>
+              </p>
+            </article>
+          </article>
+          <button class="modal__btn">записаться</button>
+        </aside>
+        <section class="right__content">
+          <section class="right__content-top">
+            <span></span>
+            <span>
+              <picture>
+                <img src="img/logos/logo_partners1.png" alt="Логотип webastо">
+              </picture>
+            </span>
+            <span>
+              <picture>
+                <img src="img/logos/logo_partners2.png" alt="Логотип eberspatche">
+              </picture>
+            </span>
+            <span></span>
+          </section>
+          <!-- breadcumps -->
+          <nav id="breadcumbs">
+            <ul class="container">
+              <li>
+                <a href="#">Главная</a>
               </li>
-              <li class="item">
-                <ul>
-                  <li class="button"><a href="#">Категория с длинным названием в две строки</a></li>
-                  <li class="dropdown">
-                    <ul>
-                      <li><a href="#">Подкатегория</a></li>
-                      <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                      <li><a href="#">Подкатегория с длинным названием</a></li>
-                      <li><a href="#">Подкатегория</a></li>
-                    </ul>
-                  </li>
-                </ul>
+              <li>
+                <a href="#">Каталог</a>
               </li>
-              <li class="item">
-                <ul>
-                  <li class="button"><a href="#">Выделенная категория</a></li>
-                  <li class="dropdown">
-                    <ul>
-                      <li><a href="#">Подкатегория</a></li>
-                      <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                      <li><a href="#">Подкатегория с длинным названием</a></li>
-                      <li><a href="#">Подкатегория</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li class="item">
-                <ul>
-                  <li class="button"><a href="#">Категория простая</a></li>
-                  <li class="dropdown">
-                    <ul>
-                      <li><a href="#">Подкатегория</a></li>
-                      <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                      <li><a href="#">Подкатегория с длинным названием</a></li>
-                      <li><a href="#">Подкатегория</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li class="item">
-                <ul>
-                  <li class="button"><a href="#">Категория простая</a></li>
-                  <li class="dropdown">
-                    <ul>
-                      <li><a href="#">Подкатегория</a></li>
-                      <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                      <li><a href="#">Подкатегория с длинным названием</a></li>
-                      <li><a href="#">Подкатегория</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li class="item">
-                <ul>
-                  <li class="button"><a href="#">Категория простая</a></li>
-                  <li class="dropdown">
-                    <ul>
-                      <li><a href="#">Подкатегория</a></li>
-                      <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                      <li><a href="#">Подкатегория с длинным названием</a></li>
-                      <li><a href="#">Подкатегория</a></li>
-                    </ul>
-                  </li>
-                </ul>
+              <li>
+                <a href="#">next page</a>
               </li>
             </ul>
-          </div>
-          <div class="right__content">
-            <div class="sorting">
-              <p><span><strong>3490 </strong></span>товаров</p>
-              <form class="woocommerce-ordering">
-                <legend class="orderby">
-                  Сортировать по:
-                  <select name="sort__product" id="sort__product">
-                    <option selected value="1">Популярности</option>
-                    <option value="2">Возрастанию цены</option>
-                  </select>
-                </legend>
+          </nav>
+          <!-- search -->
+          <section class="search-sort">
+            <div class="search">
+              <form>
+                <label class="search-description">
+                  Поиск
+                </label>
+                <input type="s" name="search" placeholder="Введите номер/название запчасти">
+                <button></button>
               </form>
             </div>
-            <ul class="product__items">
-              <li>
-                <a href="#">
-                  <div class="best__product-card">
-                    <div class="card__img">
-                      <img src="img/product/25371.jpg" alt="Новинки">
-                    </div>
-                    <div class="card__name">
-                      <h3>
-                        <span>Givenchy</span><br> Духи женские “Название духов”
-                      </h3>
-                    </div>
-                    <div class="card__footer">
-                      <div class="prices">
-                        <div class="strikeout__price">
-                          <p><span>125 000</span>руб.</p>
-                        </div>
-                        <div class="current__price">
-                          <p><span>25 000</span>руб.</p>
-                        </div>
-                      </div>
-                      <div class="addToCart">
-                        <button type="submit" name="add__cart-btn" class="addCart__btn">
-                          <img src="img/icon/commerce-and-shopping.png" alt="Купить товар на дом">
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </a>
+            <div class="sort">
+              <form>
+                <label class="sort_by">
+                  Сортировать
+                </label>
+                <select class="select-css">
+                  <option selected value="1">По популярности</option>
+                  <option value="2">Сначала дешевле</option>
+                  <option value="3">Сначала дороже</option>
+                  <option value="4">По алфавиту</option>
+                  <option value="5">По новизне</option>
+                </select>
+              </form>
+            </div>
+          </section>
+          <section class="category__product-items">
+            <ul>
+              <li class="category__product-item">
+                <picture class="item__img">
+                  <img src="img/item_product1.jpg" alt="Картинка товара магазина автоклиматика">
+                </picture>
+                <p class="item__name"><span>Датчик температуры (ограничитель нагрева) / ВЛ </span></p>
+                <p class="item__manufacturer">
+                  <b>Производитель: </b>
+                  <span>Webasto</span>
+                </p>
+                <p>
+                  <b>Мощность: </b>
+                  <span>5кВт</span>
+                </p>
+                <p>
+                  <b>Напряжение: </b>
+                  <span>12В</span>
+                </p>
+                <p>
+                  <b>Вид топлива: </b>
+                  <span>бензин</span>
+                </p>
+                <p>
+                  <b>Способ управления: </b>
+                  <span>Терморегулятор ручной</span>
+                </p>
+                <p>
+                  <b>Артикул: </b>
+                  <span>1265456213541</span>
+                </p>
+                <span class="item__price">22 300 руб</span>
+                <a href="" class="button__add_to_cart">Добавить</a>
               </li>
-              <li>
-                <a href="#">
-                  <div class="new__product-card">
-                    <span class="new-icon">
-                      <img src="img/icon/new.png" alt="Новинки-иконка">
-                    </span>
-                    <div class="card__img">
-                      <img src="img/product/perfume_PNG10271.jpg" alt="Новинки">
-                    </div>
-                    <div class="card__name">
-                      <h3>
-                        <span>Givenchy</span><br> Духи женские “Название духов”
-                      </h3>
-                    </div>
-                    <div class="card__footer">
-                      <div class="prices">
-                        <div class="strikeout__price">
-                          <p><span>125 000</span>руб.</p>
-                        </div>
-                        <div class="current__price">
-                          <p><span>25 000</span>руб.</p>
-                        </div>
-                      </div>
-                      <div class="addToCart">
-                        <button type="submit" name="add__cart-btn" class="addCart__btn">
-                          <img src="img/icon/commerce-and-shopping.png" alt="Купить товар на дом">
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </a>
+              <li class="category__product-item">
+                <picture class="item__img">
+                  <img src="img/item_product2.jpg" alt="Картинка товара магазина автоклиматика">
+                </picture>
+                <p class="item__name"><span>Датчик температуры (ограничитель нагрева) / ВЛ </span></p>
+                <p class="item__manufacturer">
+                  <b>Производитель: </b>
+                  <span>Webasto</span>
+                </p>
+                <p>
+                  <b>Мощность: </b>
+                  <span>5кВт</span>
+                </p>
+                <p>
+                  <b>Напряжение: </b>
+                  <span>12В</span>
+                </p>
+                <p>
+                  <b>Вид топлива: </b>
+                  <span>бензин</span>
+                </p>
+                <p>
+                  <b>Способ управления: </b>
+                  <span>Терморегулятор ручной</span>
+                </p>
+                <p>
+                  <b>Артикул: </b>
+                  <span>1265456213541</span>
+                </p>
+                <span class="item__price">22 300 руб</span>
+                <a href="" class="button__add_to_cart">Добавить</a>
               </li>
-              <li>
-                <a href="#">
-                  <div class="best__product-card">
-                    <div class="card__img">
-                      <img src="img/product/25371.jpg" alt="Новинки">
-                    </div>
-                    <div class="card__name">
-                      <h3>
-                        <span>Givenchy</span><br> Духи женские “Название духов”
-                      </h3>
-                    </div>
-                    <div class="card__footer">
-                      <div class="prices">
-                        <div class="current__price">
-                          <p><span>25 000</span>руб.</p>
-                        </div>
-                      </div>
-                      <div class="addToCart">
-                        <button type="submit" name="add__cart-btn" class="addCart__btn">
-                          <img src="img/icon/commerce-and-shopping.png" alt="Купить товар на дом">
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </a>
+              <li class="category__product-item">
+                <picture class="item__img">
+                  <img src="img/item_product3.jpg" alt="Картинка товара магазина автоклиматика">
+                </picture>
+                <p class="item__name"><span>Датчик температуры (ограничитель нагрева) / ВЛ </span></p>
+                <p class="item__manufacturer">
+                  <b>Производитель: </b>
+                  <span>Webasto</span>
+                </p>
+                <p>
+                  <b>Мощность: </b>
+                  <span>5кВт</span>
+                </p>
+                <p>
+                  <b>Напряжение: </b>
+                  <span>12В</span>
+                </p>
+                <p>
+                  <b>Вид топлива: </b>
+                  <span>бензин</span>
+                </p>
+                <p>
+                  <b>Способ управления: </b>
+                  <span>Терморегулятор ручной</span>
+                </p>
+                <p>
+                  <b>Артикул: </b>
+                  <span>1265456213541</span>
+                </p>
+                <span class="item__price">22 300 руб</span>
+                <a href="" class="button__add_to_cart">Добавить</a>
               </li>
-              <li>
-                <a href="#">
-                  <div class="new__product-card">
-                    <span class="new-icon">
-                      <img src="img/icon/new.png" alt="Новинки-иконка">
-                    </span>
-                    <div class="card__img">
-                      <img src="img/product/perfume_PNG10271.jpg" alt="Новинки">
-                    </div>
-                    <div class="card__name">
-                      <h3>
-                        <span>Givenchy</span><br> Духи женские “Название духов”
-                      </h3>
-                    </div>
-                    <div class="card__footer">
-                      <div class="prices">
-                        <div class="strikeout__price">
-                          <p><span>125 000</span>руб.</p>
-                        </div>
-                        <div class="current__price">
-                          <p><span>25 000</span>руб.</p>
-                        </div>
-                      </div>
-                      <div class="addToCart">
-                        <button type="submit" name="add__cart-btn" class="addCart__btn">
-                          <img src="img/icon/commerce-and-shopping.png" alt="Купить товар на дом">
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </a>
+              <li class="category__product-item">
+                <picture class="item__img">
+                  <img src="img/item_product4.jpg" alt="Картинка товара магазина автоклиматика">
+                </picture>
+                <p class="item__name"><span>Датчик температуры (ограничитель нагрева) / ВЛ </span></p>
+                <p class="item__manufacturer">
+                  <b>Производитель: </b>
+                  <span>Webasto</span>
+                </p>
+                <p>
+                  <b>Мощность: </b>
+                  <span>5кВт</span>
+                </p>
+                <p>
+                  <b>Напряжение: </b>
+                  <span>12В</span>
+                </p>
+                <p>
+                  <b>Вид топлива: </b>
+                  <span>бензин</span>
+                </p>
+                <p>
+                  <b>Способ управления: </b>
+                  <span>Терморегулятор ручной</span>
+                </p>
+                <p>
+                  <b>Артикул: </b>
+                  <span>1265456213541</span>
+                </p>
+                <span class="item__price">22 300 руб</span>
+                <a href="" class="button__add_to_cart">Добавить</a>
               </li>
-              <li>
-                <a href="#">
-                  <div class="best__product-card">
-                    <div class="card__img">
-                      <img src="img/product/25371.jpg" alt="Новинки">
-                    </div>
-                    <div class="card__name">
-                      <h3>
-                        <span>Givenchy</span><br> Духи женские “Название духов”
-                      </h3>
-                    </div>
-                    <div class="card__footer">
-                      <div class="prices">
-                        <div class="current__price">
-                          <p><span>25 000</span>руб.</p>
-                        </div>
-                      </div>
-                      <div class="addToCart">
-                        <button type="submit" name="add__cart-btn" class="addCart__btn">
-                          <img src="img/icon/commerce-and-shopping.png" alt="Купить товар на дом">
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <div class="new__product-card">
-                    <span class="new-icon">
-                      <img src="img/icon/new.png" alt="Новинки-иконка">
-                    </span>
-                    <div class="card__img">
-                      <img src="img/product/perfume_PNG10271.jpg" alt="Новинки">
-                    </div>
-                    <div class="card__name">
-                      <h3>
-                        <span>Givenchy</span><br> Духи женские “Название духов”
-                      </h3>
-                    </div>
-                    <div class="card__footer">
-                      <div class="prices">
-                        <div class="strikeout__price">
-                          <p><span>125 000</span>руб.</p>
-                        </div>
-                        <div class="current__price">
-                          <p><span>25 000</span>руб.</p>
-                        </div>
-                      </div>
-                      <div class="addToCart">
-                        <button type="submit" name="add__cart-btn" class="addCart__btn">
-                          <img src="img/icon/commerce-and-shopping.png" alt="Купить товар на дом">
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </a>
+              <li class="category__product-item">
+                <picture class="item__img">
+                  <img src="img/item_product5.jpg" alt="Картинка товара магазина автоклиматика">
+                </picture>
+                <p class="item__name"><span>Датчик температуры (ограничитель нагрева) / ВЛ </span></p>
+                <p class="item__manufacturer">
+                  <b>Производитель: </b>
+                  <span>Webasto</span>
+                </p>
+                <p>
+                  <b>Мощность: </b>
+                  <span>5кВт</span>
+                </p>
+                <p>
+                  <b>Напряжение: </b>
+                  <span>12В</span>
+                </p>
+                <p>
+                  <b>Вид топлива: </b>
+                  <span>бензин</span>
+                </p>
+                <p>
+                  <b>Способ управления: </b>
+                  <span>Терморегулятор ручной</span>
+                </p>
+                <p>
+                  <b>Артикул: </b>
+                  <span>1265456213541</span>
+                </p>
+                <span class="item__price">22 300 руб</span>
+                <a href="" class="button__add_to_cart">Добавить</a>
               </li>
             </ul>
-          </div>
-        </div>
-      </div>
+            <a href="" class="show__more">больше товаров...</a>
+          </section>
+          <article class="category__description">
+            <section>
+              <h2>Предпусковой подогреватель – незаменимый помошник в холодное время года!</h2>
+              <p>В условиях российской зимы подогрев двигателя автомобиля перед запуском - необходимое условие его
+                нормальной эксплуатации. При этом прогретый салон автомобиля дает приятное чувство комфорта при посадке.
+                На автомобилях с дизельным двигателем подогрев во время движения дает возможность поддерживать рабочую
+                температуру в любой мороз. Поэтому российские владельцы автомобилей все чаще выбирают предпусковой
+                подогреватель двигателя и салона Webasto / Вебасто, автономно работающий на топливе из бака автомобиля.
+                Предпусковой подогреватель двигателя Вебасто это небольшой отопитель, устанавливаемый вне салона
+                автомобиля, например под капотом автомобиля, в бампере или под крылом. Предпусковой подогреватель
+                Вебасто
+                подключается к системе охлаждающей жидкости двигателя, блок управления отопителя подключается к
+                электрике
+                автомобиля, а топливозаборник устанавливается в топливный бак автомобиля.</p>
+            </section>
+            <section>
+              <h2>Преимущества установки предпускового подогревателя</h2>
+              <p>Предпусковой подогреватель Вебасто влияет на вашу безопасность, улучшает комфортабельность вашего
+                автомобиля, улучшает показатели экономичности, долговечности и экологической чистоты автомобиля, потому
+                что перед поездкой: - двигатель автомобиля прогрет и заводится без лишних усилий, это сильно понижает
+                потребление топлива, снижает нагрузку на аккумулятор (что немаловажно на морозе), уменьшает износ
+                двигателя и объём вредных выбросов в атмосферу и конечно экономит ваше время; - прогретый салон,
+                повышает
+                комфорт управления автомобилем, улучшает вашу реакцию и дает возможность избавиться от верхней одежды,
+                чтобы беспроблемно воспользоваться ремнем безопасности; - оттаявшие стекла избавят вас от нудного
+                каждодневного ритуала расчистки автомобиля, а свободные ото льда дворники дадут хороший обзор с самого
+                начала поездки.</p>
+            </section>
+            <section class="category__description-third">
+              <article>
+                <h2>Внимание!</h2>
+                <p>Цена установки предпусковых подогревателей двигателя складывается из четырех позиций: </p>
+                <ul>
+                  <li>1. цена
+                    установочного комплекта предпускового подогревателя двигателя</li>
+                  <li>2. цена органа
+                    управления предпусковым
+                    подогревателем двигателя</li>
+                  <li>3. стоимость установки отопителя </li>
+                  <li>4. стоимость установки органа управления
+                    предпускового отопителя</li>
+                </ul>
+              </article>
+              <picture>
+                <img src="img/category__description/img1.jpg"
+                  alt="картинка для Цена установки предпусковых подогревателей двигателя">
+              </picture>
+            </section>
+          </article>
+        </section>
+      </section>
     </section>
   </main>
   <!-- footer -->
   <footer id="footer">
-    <div class="container">
-      <div class="footer__item">
-        <div class="logo">
-          <img src="img/logo_footer.png" alt="logo icon">
-        </div>
-        <div class="search">
-          <form>
-            <input type="s" name="s" id="s" placeholder="Поиск">
-            <button class="search__btn" type="submit">
-              <img src="img/icon/search.png" alt="search button icon">
-            </button>
-          </form>
-        </div>
-        <div class="footer__signature">
-          <span>© 2013-2019, ООО «Бизнес Мебель» Все права защищены. Копирование любых материалов только с письменного
-            разрешения владельцев сайта.</span>
-        </div>
-      </div>
-      <nav class="footer__nav">
-        <ul>
-          <li><a aria-current="page" href="">О компании</a></li>
-          <li><a href="">Каталог мебели</a></li>
-          <li><a href="">Наши работы</a></li>
-          <li><a href="">Материалы</a></li>
-          <li><a href="">Схема работы</a></li>
-          <li><a href="">Карта сайта</a></li>
-        </ul>
-        <ul>
-          <li><a href="">Акции</a></li>
-          <li><a href="">Блог</a></li>
-          <li><a href="">Партнерам</a></li>
-          <li><a href="">Отзывы</a></li>
-          <li><a href="">Контакты</a></li>
-        </ul>
-      </nav>
-      <div class="footer__contacts">
-        <div class="contacts__items">
-          <div class="item">
-            <p>
-              <span>Бесплатно по России</span><br>
-              <span><a href="tel:8 (800) 550-93-96">8 (800) 550-93-96</a></span>
-            </p>
-            <p>
-              <span>Мы на связи:</span><br>
-              <span>с 10:00 до 20:00 / пн-пт</span>
-            </p>
-          </div>
-          <div class="item">
-            <p>
-              <a href="tel:8 (495) 150-72-86">8 (495) 150-72-86</a>
-            </p>
-            <p>
-              <span>Отправляйте заявки:</span><br>
-              <span><a href="mailto:zakaz@mebel2biz.ru">zakaz@mebel2biz.ru</a></span>
-            </p>
-          </div>
-        </div>
-        <div class="social">
-          <span>Подписывайтесь:</span>
-          <ul>
-            <li><a href="#"><img src="img/icon/vk.png" alt="social icon"></a></li>
-            <li><a href="#"><img src="img/icon/facebook.png" alt="social icon"></a></li>
-            <li><a href="#"><img src="img/icon/twich.png" alt="social icon"></a></li>
-            <li><a href="#"><img src="img/icon/insta.png" alt="social icon"></a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
+
   </footer>
 
   <script src="js/jquery/jquery.min.js"></script>
