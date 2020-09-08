@@ -54,6 +54,10 @@
         padding: 6px 0;
         width: 100%;
         max-width: 190px;
+        @include transition;
+        &:hover {
+          color: rgb(3, 96, 148);
+        }
       }
     }
   }
@@ -231,6 +235,11 @@
     width: 220px;
     height: 84px;
     display: block;
+    a {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
     &:nth-child(1) {
       background-image: url(../img/triangle-bg-grey-contetnt-right-1.png);
     }
@@ -306,11 +315,6 @@
   border-bottom: 1px dashed #ff3d00;
   position: relative;
   display: block;
-  &:hover {
-    & .item__img img {
-      transform: scale(1.2);
-    }
-  }
   &::after {
     content: "";
     display: block;
@@ -341,10 +345,25 @@
     height: 160px;
     width: 200px;
     overflow: hidden;
+    position: relative;
     img {
       height: 100%;
       object-fit: cover;
       @include transition;
+    }
+    .item__product__availability {
+      position: absolute;
+      bottom: 5px;
+      left: 7px;
+      font-size: 14px;
+      font-weight: bold;
+      text-transform: uppercase;
+      &.yes {
+        color: rgb(0, 56, 255);
+      }
+      &.no {
+        color: rgb(255, 61, 0);
+      }
     }
   }
   .item__name {
@@ -370,25 +389,57 @@
     width: 100%;
     min-height: 55px;
     max-width: 200px;
-    background-color: transparent;
-    background-image: url(../img/logos/btn__border.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: center center;
-    text-transform: uppercase;
-    text-align: center;
-    color: #1d475f;
-    font-weight: bold;
-    font-size: 14px;
-    margin: 0 auto 10px;
-    border-radius: 5px;
-    padding-top: 19px;
     background: linear-gradient(
       180deg,
       #036094 0%,
       rgba(3, 96, 148, 0) 53.12%,
       #036094 100%
     );
+    text-transform: uppercase;
+    text-align: center;
+    color: rgb(29, 71, 95);
+    border: 3px solid rgb(3, 96, 148);
+    font-weight: bold;
+    font-size: 14px;
+    margin: 0 auto 10px;
+    border-radius: 5px;
+    padding-top: 19px;
+    position: relative;
+    z-index: 1;
+    &::after {
+      content: "";
+      z-index: -1;
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      transition: opacity 0.3s;
+      background: linear-gradient(
+        180deg,
+        rgba(255, 61, 0, 0.3) 0%,
+        rgb(255, 61, 0) 48.96%,
+        rgba(255, 61, 0, 0.3) 100%
+      );
+    }
+    &:hover {
+      color: white;
+      background: transparent;
+      border: 3px solid rgb(255, 61, 0);
+      &::after {
+        opacity: 1;
+      }
+    }
+    &.added {
+      color: rgb(29, 71, 95);
+      background: transparent;
+      border: 3px solid rgb(3, 96, 148);
+      &::after {
+        opacity: 0;
+      }
+    }
   }
 }
 .show__more {
