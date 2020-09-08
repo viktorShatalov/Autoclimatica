@@ -11,8 +11,24 @@
 </head>
 
 <body>
-  <!-- header__modal -->
-
+  <!-- modal -->
+  <div class="modal " id="modal">
+    <div class="modal-body">
+      <div data-close-button class="close-button">
+        <span></span>
+      </div>
+      <div class="modal__content">
+        <span class="modal__content-head">Мы перезвоним Вам сами</span>
+        <form>
+          <input type="text" name="name" placeholder="Имя">
+          <input type="tel" name="phone" placeholder="Номер телефона">
+          <textarea name="massege" placeholder="Сообщение"></textarea>
+          <input type="submit" value="Отправить">
+        </form>
+      </div>
+    </div>
+  </div>
+  <div id="overlay"></div>
   <!-- header -->
   <header id="header">
     <section class="header__top__row container">
@@ -43,6 +59,7 @@
       <div class="header__center__row-description">
         <span>Комфорт в вашем автомобиле</span>
       </div>
+      <div class="burger"><span></span></div>
     </section>
     <section class="header__bottom__row container">
       <nav class="header__menu">
@@ -150,7 +167,7 @@
               </p>
             </article>
           </article>
-          <button class="modal__btn">записаться</button>
+          <button class="modal__btn" data-modal-target="#modal">записаться</button>
         </aside>
         <section class="right__content">
           <section class="right__content-top">
@@ -468,7 +485,8 @@
       </address>
     </div>
     <div class="footer__signature container">
-      <small>2020 Разработка сайтов <a href="https://div-head.ru/">div-head.ru</a>.Все права защищены</small>
+      <small>2020 Разработка сайтов <a href="https://div-head.ru/" target="_blank">div-head.ru</a>.Все права
+        защищены</small>
     </div>
   </footer>
 

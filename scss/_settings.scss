@@ -25,8 +25,9 @@ body {
   padding: 0 15px;
 }
 main {
-  background-color: rgb(189, 189, 189);
+  background-color: rgb(255, 255, 255);
 }
+
 form {
   width: 100%;
 }
@@ -79,17 +80,16 @@ ins {
 .slick-dots {
   position: absolute;
   display: flex;
-  bottom: 15px;
+  bottom: 22px;
   right: 50%;
   transform: translateX(50%);
   z-index: 3;
   @include transition;
   li {
-    background-color: $color_slider_dot-li_bg;
-    margin: 0 7.5px;
-    width: 4px;
-    height: 4px;
-    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    margin: 0 13px;
+    width: 28px;
+    height: 13px;
     cursor: pointer;
     button {
       position: absolute;
@@ -97,7 +97,7 @@ ins {
       height: 0;
     }
     &.slick-active {
-      transform: scale(2);
+      background-color: rgb(29, 71, 95);
     }
   }
 }

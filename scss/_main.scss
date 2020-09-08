@@ -1,0 +1,208 @@
+#first__screen {
+  background-color: rgb(3, 96, 148);
+  padding-bottom: 32px;
+  .container {
+    padding: 0;
+    position: relative;
+  }
+  .first__slider__btn {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    max-width: 355px;
+    a {
+      min-height: 76px;
+      width: 100%;
+      display: inline-block;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 28px;
+      padding: 12px 35px 0 110px;
+      color: rgb(51, 51, 51);
+      text-transform: uppercase;
+      background-image: url(../img/modal-triangle-orange.png);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position: center center;
+      @include transition;
+      &:hover {
+        background-image: url(../img/modal-triangle-orange-hover.png);
+      }
+    }
+  }
+}
+.first__slider__item {
+  padding: 52px 0 0;
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: contain;
+}
+.first__slider-description {
+  width: 100%;
+  max-width: 53%;
+  margin-left: auto;
+  text-transform: uppercase;
+  color: #ffffff;
+  h1 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 50px;
+    padding-left: 92px;
+    span {
+      display: inline-block;
+      margin-bottom: 20px;
+      &:nth-child(2) {
+        margin-bottom: 18px;
+      }
+      span {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 0;
+        &:nth-child(2) {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  h2 {
+    font-size: 45px;
+    line-height: 53px;
+    margin-bottom: 177px;
+  }
+}
+// second__screen
+
+#second__screen {
+  background-image: url(../img/second-bg.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: contain;
+  margin-bottom: 15px;
+  &.container {
+    padding: 0;
+  }
+  h2 {
+    color: rgb(255, 61, 0);
+    font-size: 30px;
+    line-height: 35px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+  .category__content {
+    padding: 20px 11px 0;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      max-width: 1147px;
+      height: 5px;
+      background-color: rgb(255, 61, 0);
+      top: -6px;
+      left: 11px;
+    }
+  }
+  .left__sidebar {
+    max-width: 211px;
+    width: 100%;
+  }
+  .left__sidebar-decoration {
+    &::after {
+      right: -17px;
+      top: 114px;
+      height: calc(100% - 114px);
+    }
+  }
+  .right__content {
+    max-width: 915px;
+    width: 100%;
+  }
+  .right__content-top {
+    justify-content: unset;
+    span {
+      width: 223px;
+      height: 86px;
+    }
+  }
+  .category__product-items {
+    ul {
+      margin-bottom: 93px;
+    }
+  }
+  .category__product-item {
+    padding: 24px 0 0;
+    text-align: center;
+    margin: 0 0px 3px;
+    .item__img {
+      height: 138px;
+    }
+    .item__name {
+      margin-bottom: 19px;
+    }
+  }
+}
+.goToCatalog {
+  display: block;
+  width: 100%;
+  max-width: 263px;
+  min-height: 72px;
+  padding: 29px 0 0;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 18.5px;
+  text-transform: uppercase;
+  color: rgb(255, 61, 0);
+  border-radius: 6px;
+  background-image: url(../img/logos/btn__border-orange.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 100%;
+  @include transition;
+  &:hover {
+    background-color: rgb(255, 61, 0);
+    color: white;
+  }
+}
+.second__screen-top__items {
+  @include flex;
+  justify-content: space-between;
+  padding: 17px 8px 80px;
+}
+.second__screen-top__item {
+  background-image: url(../img/triangle-bg-white-left.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 275px;
+  height: 280px;
+  padding: 59px 0 0;
+  margin-bottom: 15px;
+  @include transition;
+  &:hover {
+    transform: scale(1.35);
+  }
+  &:nth-child(2),
+  &:nth-child(4) {
+    background-image: url(../img/triangle-bg-white-right.png);
+  }
+  figcaption {
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    display: inline-block;
+    margin-bottom: 17px;
+    width: 100%;
+  }
+  img {
+    width: 222px;
+    height: 155px;
+    margin: 0 auto;
+    object-fit: none;
+    display: block;
+    border: 1px solid rgb(119, 119, 119);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  }
+}

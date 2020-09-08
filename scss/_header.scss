@@ -1,16 +1,16 @@
 #header {
   background-color: rgb(3, 96, 148);
-  padding: 62px 0;
+  padding: 38px 0 65px;
 }
 .header__top__row {
   padding: 0;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
   .header__search {
     form {
       @include flex;
       align-items: center;
       justify-content: space-between;
-      max-width: 460px;
+      max-width: 342px;
       margin-left: auto;
       position: relative;
       button {
@@ -20,13 +20,14 @@
       }
     }
     .header__search-description {
-      font-size: 1.429em;
+      font-size: 14px;
       color: white;
     }
   }
   input[type="s"] {
-    max-width: 260px;
-    padding: 8px 12px;
+    font-size: 12px;
+    max-width: 227px;
+    padding: 6px 12px;
     border: 1px solid rgb(51, 51, 51);
     background-color: white;
   }
@@ -35,32 +36,35 @@
 .header__center__row {
   background-color: rgb(29, 71, 95);
   position: relative;
-  padding: 60px 15px 65px;
-  margin-bottom: 11px;
+  padding: 60px 15px 63px;
+  margin-bottom: 13px;
   box-shadow: 0px 0px 10px rgb(0, 0, 0);
   &-description {
     text-align: right;
-    margin-right: 30px;
+    margin-right: 76px;
     span {
       line-height: 47px;
-      font-size: 3.214em;
+      font-size: 40px;
+      letter-spacing: 0.2px;
       color: white;
       font-weight: bold;
     }
   }
 }
 .header__logo {
-  padding: 15px;
+  padding: 15px 0;
   position: absolute;
   width: 100%;
   max-width: 371px;
   height: 293px;
-  top: -49px;
+  top: -55px;
+  left: 40px;
   background-image: url(../img/logos/logo__border.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   figcaption {
+    text-align: center;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 2.857em;
@@ -71,30 +75,34 @@
 }
 .header__logo-bottom {
   display: flex;
-  align-items: flex-end;
   justify-content: space-between;
-  margin: 25px 0 0;
+  margin: 18px 0 0;
+  position: relative;
+  padding: 0 10px;
   span {
+    position: absolute;
+    left: 52%;
+    transform: translateX(-50%);
     color: white;
     text-align: center;
     text-transform: uppercase;
-    margin: 0px 0 21px -15px;
+    margin: 1px auto 0;
   }
   .left__img {
     width: 100%;
-    max-width: 147px;
+    max-width: 155px;
   }
   .right__img {
     width: 100%;
-    max-width: 98px;
+    max-width: 110px;
+    margin-top: 23px;
   }
 }
 .logo {
   display: block;
   width: 100%;
-  max-width: 175px;
-  height: 175px;
-  margin: -5px auto -24px;
+  max-width: 180px;
+  margin: 0 auto -30px;
   img {
     object-fit: cover;
   }
@@ -108,7 +116,8 @@
 .menu__items {
   @include flex;
   align-items: flex-end;
-  margin-right: 23px;
+  margin-right: 26px;
+  margin-bottom: -2px;
   li {
     border-right: 1px solid rgb(153, 153, 153);
     border-top: 1px solid rgb(153, 153, 153);
@@ -122,10 +131,12 @@
     }
     a {
       display: inline-block;
-      padding: 10px 18px;
+      padding: 11px 17.5px;
       font-size: 1.286em;
       color: white;
-      &[aria-current="page"] {
+      @include transition;
+      &[aria-current="page"],
+      &:hover {
         color: rgb(255, 61, 0);
       }
     }
@@ -136,7 +147,8 @@
   .cart__btn {
     display: block;
     background-color: transparent;
-    width: 60px;
+    width: 53px;
+    height: 51px;
     position: relative;
     margin-right: 10px;
     cursor: pointer;
@@ -146,7 +158,7 @@
     .basket-btn__counter {
       position: absolute;
       right: -15px;
-      top: -10px;
+      top: -12px;
       padding-top: 4px;
       background-color: rgb(255, 0, 0);
       border: 1px solid #ffffff;

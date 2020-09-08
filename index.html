@@ -4,324 +4,440 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Главная страница Pro mebel</title>
+  <title>Главная автоклиматика</title>
   <link rel="shortcut icon" href="" type="image/x-icon">
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-  <link rel="stylesheet" href="css/uikit.min.css" />
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <!-- header__modal -->
-  <div id="header__modal" class="uk-modal">
-    <div class="uk-modal-dialog">
-      <a class="uk-modal-close"><span></span></a>
-      <div class="form__heading">
-        <span>ЗАКАЗАТЬ ЗВОНОК</span>
+  <!-- modal -->
+  <div class="modal " id="modal">
+    <div class="modal-body">
+      <div data-close-button class="close-button">
+        <span></span>
       </div>
-      <div class="form__body">
-        <span>Перезвоним в течение 5 минут</span>
-        <span>Оставьте свой контактный телефон:</span>
+      <div class="modal__content">
+        <span class="modal__content-head">Мы перезвоним Вам сами</span>
         <form>
-          <p>
-            <input type="tel" placeholder="+7">
-          </p>
-          <span class="info">или e-mail:</span>
-          <p>
-            <input type="email" placeholder="Электронный ящик">
-          </p>
-          <p>
-            <input type="checkbox" name="modal-checkbox" id="modal-checkbox" checked>
-            <label for="modal-checkbox">Согласен на обработку моих данных</label>
-          </p>
-          <span class="info">Мы не рассылаем спам и смс</span>
-          <input type="submit" value="Заказать">
+          <input type="text" name="name" placeholder="Имя">
+          <input type="tel" name="phone" placeholder="Номер телефона">
+          <textarea name="massege" placeholder="Сообщение"></textarea>
+          <input type="submit" value="Отправить">
         </form>
       </div>
     </div>
   </div>
+  <div id="overlay"></div>
   <!-- header -->
   <header id="header">
-    <div class="top__row">
-      <div class="conteiner">
-        <div class="location">
-          <a href="">Москва</a>
-        </div>
-        <nav class="header__top-menu">
-          <ul>
-            <li><a href="">О компании</a></li>
-            <li><a href="">Cхема работы</a></li>
-            <li><a href="">Партнёрам</a></li>
-            <li><a href="">Материалы</a></li>
-            <li><a href="">Блог</a></li>
-            <li><a href="">Услуги</a></li>
-            <li><a href="">Отзывы</a></li>
-          </ul>
-        </nav>
-        <div class="opening__hours">
-          <span>Мы на связи:</span>
-          <span>с 10:00 до 20:00 / пн-пт</span>
-        </div>
-        <div class="mail">
-          <span>Отправляйте заявки:</span>
-          <span><a href="mailto:">zakaz@mebel2biz.ru</a></span>
+    <section class="header__top__row container">
+      <div class="header__search">
+        <form>
+          <label class="header__search-description">Быстрый поиск</label>
+          <input type="s" name="search" placeholder="Введите номер/название запчасти">
+          <button></button>
+        </form>
+      </div>
+    </section>
+    <section class="header__center__row container">
+      <div class="header__logo">
+        <picture class="logo">
+          <img src="img/logos/logo.png" alt="Логотип автоклиматика">
+        </picture>
+        <figcaption>автоклиматика</figcaption>
+        <div class="header__logo-bottom">
+          <picture class="left__img">
+            <img src="img/logos/logo_partners2.png" alt="логотип партнеров">
+          </picture>
+          <span>Официальный<br> дилер</span>
+          <picture class="right__img">
+            <img src="img/logos/logo_partners1.png" alt="логотип партнеров">
+          </picture>
         </div>
       </div>
-    </div>
-    <div class="bottom__row">
-      <div class="conteiner">
-        <div class="logo">
-          <img src="img/logo.png" alt="icon logo">
-        </div>
-        <nav class="header__bottom-menu">
-          <ul class="menu">
-            <li id="first_item" class="menu__item"><a href="">Каталог</a><span class="activated"></span></li>
-            <li class="menu__item"><a href="">Работы</a></li>
-            <li class="menu__item"><a href="">Акции</a></li>
-            <li class="menu__item"><a href="">Контакты</a></li>
-          </ul>
-          <div class="sub__navigation">
-            <div class="conteiner">
-              <div class="left">
-                <ul>
-                  <li><a href="">О компании</a></li>
-                  <li><a href="">Cхема работы</a></li>
-                  <li><a href="">Партнёрам</a></li>
-                  <li><a href="">Материалы</a></li>
-                  <li><a href="">Блог</a></li>
-                  <li><a href="">Услуги</a></li>
-                  <li><a href="">Отзывы</a></li>
-                </ul>
-              </div>
-              <div class="right">
-                <div class="heading">
-                  <span>Каталог</span>
-                  <div class="form__search">
-                    <form>
-                      <input type="s" name="search">
-                      <button>
-                        <img src="img/icon/search.png" alt="search icon">
-                      </button>
-                    </form>
-                  </div>
-                </div>
-                <div class="category">
-                  <div class="category__box-menu">
-
-                    <ul class="category__menu-items" data-menu-target>
-                      <li class="item" data-filter=".item1"><a href="">Стойки ресепшн1</a></li>
-                      <li class="item" data-filter=".item2"><a href="">Стойки ресепшн2</a></li>
-                      <li class="item" data-filter=".item3"><a href="">Стойки ресепшн3</a></li>
-                      <li class="item" data-filter=".item4"><a href="">Стойки ресепшн4</a></li>
-                    </ul>
-
-                    <div class="box__sub-menu" data-subMenu-target>
-                      <div class="sub__item item1">
-                        <ul>
-                          <li><a href="#">Мебель для персонала1</a>
-                          <li><a href="#">Мебель для персонала1</a>
-                          <li><a href="#">Мебель для персонала1</a>
-                          <li><a href="#">Мебель для персонала1</a>
-                        </ul>
-                      </div>
-                      <div class="sub__item item2">
-                        <ul>
-                          <li><a href="#">Мебель для персонала2</a>
-                            <ul class="sub__item-nextLevel">
-                              <li><a href="">Все1</a></li>
-                              <li><a href="">Столы для персонала1</a></li>
-                              <li><a href="">Угловые столы1</a></li>
-                              <li><a href="">На металокаркасе1</a></li>
-                            </ul>
-                          </li>
-                          <li><a href="#">Мебель для персонала3</a>
-                            <ul class="sub__item-nextLevel">
-                              <li><a href="">Все2</a></li>
-                              <li><a href="">Столы для персонала2</a></li>
-                              <li><a href="">Угловые столы2</a></li>
-                              <li><a href="">На металокаркасе2</a></li>
-                            </ul>
-                          </li>
-                          <li><a href="#">Мебель для персонала4</a>
-                            <ul class="sub__item-nextLevel">
-                              <li><a href="">Все4</a></li>
-                              <li><a href="">Столы для персонала4</a></li>
-                              <li><a href="">Угловые столы4</a></li>
-                              <li><a href="">На металокаркасе4</a></li>
-                            </ul>
-                          </li>
-                          <li><a href="#">Мебель для персонала5</a>
-                            <ul class="sub__item-nextLevel">
-                              <li><a href="">Все5</a></li>
-                              <li><a href="">Столы для персонала5</a></li>
-                              <li><a href="">Угловые столы5</a></li>
-                              <li><a href="">На металокаркасе5</a></li>
-                            </ul>
-                          </li>
-                        </ul>
-                      </div>
-                      <div class="sub__item item3">
-                        <ul>
-                          <li><a href="#">Мебель для персонала3</a>
-                          <li><a href="#">Мебель для персонала3</a>
-                          <li><a href="#">Мебель для персонала3</a>
-                          <li><a href="#">Мебель для персонала3</a>
-                        </ul>
-                      </div>
-                      <div class="sub__item item4">
-                        <ul>
-                          <li><a href="#">Мебель для персонала4</a>
-                            <ul class="sub__item-nextLevel">
-                              <li><a href="">Все1</a></li>
-                              <li><a href="">Столы для персонала1</a></li>
-                              <li><a href="">Угловые столы1</a></li>
-                              <li><a href="">На металокаркасе1</a></li>
-                            </ul>
-                          </li>
-                          <li><a href="#">Мебель для персонала4</a>
-                            <ul class="sub__item-nextLevel">
-                              <li><a href="">Все2</a></li>
-                              <li><a href="">Столы для персонала2</a></li>
-                              <li><a href="">Угловые столы2</a></li>
-                              <li><a href="">На металокаркасе2</a></li>
-                            </ul>
-                          </li>
-                          <li><a href="#">Мебель для персонала4</a>
-                            <ul class="sub__item-nextLevel">
-                              <li><a href="">Все4</a></li>
-                              <li><a href="">Столы для персонала4</a></li>
-                              <li><a href="">Угловые столы4</a></li>
-                              <li><a href="">На металокаркасе4</a></li>
-                            </ul>
-                          </li>
-                          <li><a href="#">Мебель для персонала4</a>
-                            <ul class="sub__item-nextLevel">
-                              <li><a href="">Все4-5</a></li>
-                              <li><a href="">Столы для персонала4-5</a></li>
-                              <li><a href="">Угловые столы4-5</a></li>
-                              <li><a href="">На металокаркасе4-5</a></li>
-                            </ul>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </nav>
-        <div class="phone">
-          <p>
-            <span><a href="tel:8 (800) 550-93-96">8 (800) 550-93-96</a></span>
-            <span>бесплатно по России</span>
-          </p>
-          <p>
-            <span><a href="tel:8 (495) 150-72-86">8 (495) 150-72-86</a></span>
-            <span>Whatsapp / Telegram</span>
-          </p>
-        </div>
-        <div class="btn-request__call">
-          <a data-uk-modal href="#header__modal">Заказать звонок</a>
-          <div class="mobile__content">
-            <span>
-              <img src="img/mobile/email.png" alt="icon">
-            </span>
-          </div>
-          <div class="burger"><span></span></div>
-        </div>
-        <div class="mobile__content-social">
-          <ul>
-            <li><a href="#"><img src="img/mobile/whats_up.png" alt="social icon">Whatsapp</a></li>
-            <li><a href="#"><img src="img/mobile/telegram_mobile.png" alt="social icon">Telegram</a></li>
-            <li><a href="mailto:zakaz@mebel2biz.ru"><img src="img/mobile/email-icon.png"
-                  alt="social icon">zakaz@mebel2biz.ru</a></li>
-          </ul>
-        </div>
-
+      <div class="header__center__row-description">
+        <span>Комфорт в вашем автомобиле</span>
       </div>
-    </div>
+      <div class="burger"><span></span></div>
+    </section>
+    <section class="header__bottom__row container">
+      <nav class="header__menu">
+        <ul class="menu__items">
+          <li><a href="" aria-current="page">Главная</a></li>
+          <li><a href="">Каталог</a></li>
+          <li><a href="">Контакты</a></li>
+          <li><a href="">Доставка и оплата</a></li>
+          <li><a href="">FAQ</a></li>
+        </ul>
+      </nav>
+      <div id="cart" class="cart">
+        <a href="">
+          <button class="cart__btn">
+            <picture>
+              <img src="img/icon/cart.png" alt="картинка корзины интернет магазина автоклиматика">
+            </picture>
+            <span class="basket-btn__counter">1</span>
+          </button>
+        </a>
+      </div>
+    </section>
   </header>
   <!-- main -->
   <main>
-    <!-- first__screen -->
+    <!-- first__section -->
+    <section id="first__screen">
+      <div class="container">
+        <div class="first__slider">
+          <div class="first__slider__item" style="background-image: url(img/ferst__screen-slider1.jpg);">
+            <div class="first__slider-description">
+              <h1><span>Продажа и установка сертифицированного оборудования <span>Webasto</span> и
+                  <span>Eberspacher</span>.</span>
+                <span>ремонт и заправка автомобильных кондиционеров,</span>
+                <span>установка люков и многое другое.</span></h1>
+              <h2>Отопители.<br> Кондиционеры.<br> Автомобильные люки.</h2>
+            </div>
+          </div>
+          <div class="first__slider__item" style="background-image: url(img/ferst__screen-slider2.jpg);">
+            <div class="first__slider-description">
+              <h1><span>Продажа и установка сертифицированного оборудования <span>Webasto</span> и
+                  <span>Eberspacher</span>.</span>
+                <span>ремонт и заправка автомобильных кондиционеров,</span>
+                <span>установка люков и многое другое.</span></h1>
+              <h2>Отопители.<br> Кондиционеры.<br> Автомобильные люки.</h2>
+            </div>
+          </div>
+          <div class="first__slider__item" style="background-image: url(img/ferst__screen-slider3.jpg);">
+            <div class="first__slider-description">
+              <h1><span>Продажа и установка сертифицированного оборудования <span>Webasto</span> и
+                  <span>Eberspacher</span>.</span>
+                <span>ремонт и заправка автомобильных кондиционеров,</span>
+                <span>установка люков и многое другое.</span></h1>
+              <h2>Отопители.<br> Кондиционеры.<br> Автомобильные люки.</h2>
+            </div>
+          </div>
+        </div>
+        <div class="first__slider__btn">
+          <a href="" data-modal-target="#modal">Записаться на<br> установку</a>
+        </div>
+      </div>
+    </section>
+    <!-- second__screen -->
+    <section id="second__screen" class="container">
+      <section class="second__screen-top__items">
+        <article class="second__screen-top__item">
+          <figcaption>Для легковых автомобилей</figcaption>
+          <img src="img/second1.jpg" alt="картинка автоклиматика для легковых авто">
+        </article>
+        <article class="second__screen-top__item">
+          <figcaption>Для грузовых автомобилей</figcaption>
+          <img src="img/second2.jpg" alt="картинка автоклиматика для грузовых авто">
+        </article>
+        <article class="second__screen-top__item">
+          <figcaption>Для автобусов</figcaption>
+          <img src="img/second3.jpg" alt="картинка автоклиматика для автобусов">
+        </article>
+        <article class="second__screen-top__item">
+          <figcaption>Для яхт и катеров</figcaption>
+          <img src="img/second4.jpg" alt="картинка автоклиматика для катеров">
+        </article>
+      </section>
+      <h2>Популярное</h2>
+      <section class="category__content">
+        <aside class="left__sidebar">
+          <section class="left__sidebar-decoration">
+            <section class="category__navigation">
+              <nav class="heating__systems">
+                <div class="head">
+                  <span>Системы отопления</span>
+                </div>
+                <ul>
+                  <li><a href="">Предпусковые обогреватели</a></li>
+                  <li><a href="">Автономные отопители</a></li>
+                  <li><a href="">Пульты управления</a></li>
+                  <li><a href="">Запчасти</a></li>
+                  <li><a href="">Установка и ремонт</a></li>
+                  <li><a href="">Дооборудование догревателей</a></li>
+                </ul>
+              </nav>
+              <nav class="сooling__systems">
+                <div class="head">
+                  <span>Системы охлаждения</span>
+                </div>
+                <ul>
+                  <li><a href="">Кондиционеры WEBASTO</a></li>
+                  <li><a href="">Кондиционеры Eurostar</a></li>
+                  <li><a href="">Рефрежираторы DAIVIA</a></li>
+                  <li><a href="">Ремонт кондиционеров</a></li>
+                  <li><a href="">Ремонт компрессора кондиционера</a></li>
+                  <li><a href="">Диагностика и заправка</a></li>
+                  <li><a href="">Установка кондиционеров</a></li>
+                </ul>
+              </nav>
+              <nav class="equipment">
+                <div class="head">
+                  <span>Оборудование</span>
+                </div>
+                <ul>
+                  <li><a href="">Подогрев сидений</a></li>
+                  <li><a href="">Подъемные люки</a></li>
+                  <li><a href="">Сдвижные люки</a></li>
+                  <li><a href="">Подогрев дизельного топлива</a></li>
+                </ul>
+              </nav>
+            </section>
+          </section>
+        </aside>
+        <section class="right__content">
+          <section class="right__content-top">
+            <span></span>
+            <span>
+              <picture>
+                <img src="img/logos/logo_partners1.png" alt="Логотип webastо">
+              </picture>
+            </span>
+            <span>
+              <picture>
+                <img src="img/logos/logo_partners2.png" alt="Логотип eberspatche">
+              </picture>
+            </span>
+            <span></span>
+          </section>
+          <section class="category__product-items">
+            <ul>
+              <li class="category__product-item">
+                <picture class="item__img">
+                  <img src="img/item_product1.jpg" alt="Картинка товара магазина автоклиматика">
+                </picture>
+                <p class="item__name"><span>Датчик температуры (ограничитель нагрева) / ВЛ </span></p>
+                <p>
+                  <b>Артикул: </b>
+                  <span>1265456213541</span>
+                </p>
+                <span class="item__price">22 300 руб</span>
+              </li>
+              <li class="category__product-item">
+                <picture class="item__img">
+                  <img src="img/item_product1.jpg" alt="Картинка товара магазина автоклиматика">
+                </picture>
+                <p class="item__name"><span>Датчик температуры (ограничитель нагрева) / ВЛ </span></p>
+                <p>
+                  <b>Артикул: </b>
+                  <span>1265456213541</span>
+                </p>
+                <span class="item__price">22 300 руб</span>
+              </li>
+              <li class="category__product-item">
+                <picture class="item__img">
+                  <img src="img/item_product1.jpg" alt="Картинка товара магазина автоклиматика">
+                </picture>
+                <p class="item__name"><span>Датчик температуры (ограничитель нагрева) / ВЛ </span></p>
+                <p>
+                  <b>Артикул: </b>
+                  <span>1265456213541</span>
+                </p>
+                <span class="item__price">22 300 руб</span>
+              </li>
+              <li class="category__product-item">
+                <picture class="item__img">
+                  <img src="img/item_product1.jpg" alt="Картинка товара магазина автоклиматика">
+                </picture>
+                <p class="item__name"><span>Датчик температуры (ограничитель нагрева) / ВЛ </span></p>
+                <p>
+                  <b>Артикул: </b>
+                  <span>1265456213541</span>
+                </p>
+                <span class="item__price">22 300 руб</span>
+              </li>
+              <li class="category__product-item">
+                <picture class="item__img">
+                  <img src="img/item_product1.jpg" alt="Картинка товара магазина автоклиматика">
+                </picture>
+                <p class="item__name"><span>Датчик температуры (ограничитель нагрева) / ВЛ </span></p>
+                <p>
+                  <b>Артикул: </b>
+                  <span>1265456213541</span>
+                </p>
+                <span class="item__price">22 300 руб</span>
+              </li>
+              <li class="category__product-item">
+                <picture class="item__img">
+                  <img src="img/item_product1.jpg" alt="Картинка товара магазина автоклиматика">
+                </picture>
+                <p class="item__name"><span>Датчик температуры (ограничитель нагрева) / ВЛ </span></p>
+                <p>
+                  <b>Артикул: </b>
+                  <span>1265456213541</span>
+                </p>
+                <span class="item__price">22 300 руб</span>
+              </li>
+              <li class="category__product-item">
+                <picture class="item__img">
+                  <img src="img/item_product1.jpg" alt="Картинка товара магазина автоклиматика">
+                </picture>
+                <p class="item__name"><span>Датчик температуры (ограничитель нагрева) / ВЛ </span></p>
+                <p>
+                  <b>Артикул: </b>
+                  <span>1265456213541</span>
+                </p>
+                <span class="item__price">22 300 руб</span>
+              </li>
+              <li class="category__product-item">
+                <picture class="item__img">
+                  <img src="img/item_product1.jpg" alt="Картинка товара магазина автоклиматика">
+                </picture>
+                <p class="item__name"><span>Датчик температуры (ограничитель нагрева) / ВЛ </span></p>
+                <p>
+                  <b>Артикул: </b>
+                  <span>1265456213541</span>
+                </p>
+                <span class="item__price">22 300 руб</span>
+              </li>
+            </ul>
+            <a href="" class="goToCatalog">Перейти в каталог</a>
+          </section>
+        </section>
+      </section>
+    </section>
+    <!-- guarantee -->
+    <section id="guarantee" class="container">
+      <h2>Мы гарантируем</h2>
+      <article class="guarantee__table">
+        <ul class="guarantee__table-items">
+          <li>Оригинальное оборудование Webasto и Eberspacher</li>
+          <li>Обслуживание автомобилей разных брендов</li>
+          <li>Сертифицированные мастера</li>
+          <li>Гарантию на запчасти и услуги</li>
+          <li>Качественное выполнение работ</li>
+          <li>Доступный сервис</li>
+        </ul>
+        <div class="modal__btn">
+          <a href="" data-modal-target="#modal">Записаться на установку</a>
+        </div>
+      </article>
+      <article class="category__description">
+        <section>
+          <h2>Webasto и Eberspacher - лучшая климатическая техника мировых производителей</h2>
+          <p>Мы спасем Вас от зимней стужи! Подберем и установим предпусковой подогреватель двигателя, автономный
+            отопитель Webasto или Eberspacher для вашего автомобиля, автобуса или яхтыю Также установим подогрев
+            сидений.</p>
+          <p>Автономное отопление позволяет быстро и экономично нагреть воздух в салоне. Установка такой системы
+            полностью оправдано, поскольку без нее автомобиль не сможет полноценно функционировать. Если штатный прибор
+            отопления не может функционировать, вследствие поломки или недостаточных характеристик, то установка
+            автономного отопления – первоочередное действие для владельца автомобиля, особенно если имеют место быть
+            регулярные поездки на длинные дистанции.</p>
+          <p>
+            Установка автономного отопления – это лучшее решение для вашего
+            автомобиля. Это отличный способ быстро и безопасно нагреть салон. При этом вы продлеваете срок эксплуатации
+            транспортного средства и уменьшаете расход топлива.
+          </p>
+          <p>
+            На нашем сайте вы сможете найти подробный каталог
+            запчастей для автономных отопителей и предпусковых подогревателей с каталожным номером и ценой.
+          </p>
+        </section>
+        <section>
+          <img src="img/garanty.jpg"
+            alt="картинка статья про Сертифицированный установочный центр Webasto и Eberspache: профессионализм и высокое качество услуг">
+          <section>
+            <h2>Сертифицированный установочный центр Webasto и Eberspache: профессионализм и высокое качество услуг</h2>
+            <p>Наши мастера проводят сложные работы, например диагностика и ремонт штатного отопителя и предпускового
+              подогревателя.</p>
+            <p>Наша компания продает, устанавливает автокондиционеры для автобусов и коммерческого
+              транспорта. Осуществляет заправку и ремонт автокондиционеров легковых автомобилей и автобусов.</p>
+            <p>У нас на складе широкий выбор предпусковых подогревателей и автономных отопителей. В наличие запчасти для
+              отопителей Webasto / Вебасто и Eberspacher, гибкая система скидок оптовым покупателям запчастей.
+            </p>
+            <p>Устанавливаем подогрев сидений на любые автомобили.</p>
+            <p>Наши профессиональные мастера всегда рады помочь вам
+              при ремонте автокондиционера или автономных отопителей Webasto или Eberspacher.</p>
+          </section>
+        </section>
+      </article>
+    </section>
+    <!-- contacts -->
+    <section id="contacts" class="container">
+      <h2>Контакты</h2>
+      <div class="contacts__content">
+        <div class="left__map">
+          <h3>Автоклиматика-Восток</h3>
+          <section class="left__map-content">
+            <address>
+              <p>Адрес: г.Москва, Авиамоторная ул., д.48</p>
+              <p>Тел.:<a href="tel:+74957412445"> +7(495) 741-24-45</a></p>
+              <p>Режим работы: Пн. с 10.00 до 19.00 Вт. с 10.00 до 19.00 Ср. с 10.00 до 19.00 Чт. с 10.00 до 19.00 Пт. с
+                10.00 до 19.00 Сб. с 10.00 до 19.00 Вс. выходной</p>
+            </address>
+            <map name="east__map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2246.2580635506556!2d37.71622821539029!3d55.73664500070622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414ab54bbfc3f3e5%3A0x4a788a50c663e741!2z0YPQuy4g0JDQstC40LDQvNC-0YLQvtGA0L3QsNGPLCA0OCwg0JzQvtGB0LrQstCwLCDQoNC-0YHRgdC40Y8sIDExMTAyNA!5e0!3m2!1sru!2sua!4v1599390540496!5m2!1sru!2sua"
+                width="377" height="364" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                tabindex="0"></iframe>
+            </map>
+          </section>
+        </div>
+        <div class="right__map">
+          <h3>Автоклиматика-север</h3>
+          <section class="right__map-content">
+            <address>
+              <p>Адрес: г.Москва, МКАД 74 км., д.5</p>
+              <p>Тел.:<a href="tel:+74951429654"> +7 (495) 142-96-54</a></p>
+              <p>Режим работы: Пн. с 10.00 до 19.00 Вт. с 10.00 до 19.00 Ср. с 10.00 до 19.00 Чт. с 10.00 до 19.00 Пт. с
+                10.00 до 19.00 Сб. с 10.00 до 19.00 Вс. выходной</p>
+            </address>
+            <map name="north__map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2238.099600296101!2d37.42874471539687!3d55.878286889775055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b538624b02448f%3A0x164e8b8b0d364a76!2z0JzQmtCQ0JQgNzQg0LrQvCAo0LLQvdC10YjQvS4pLCA1LCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjywgMTQxNDA3!5e0!3m2!1sru!2sua!4v1599390788065!5m2!1sru!2sua"
+                width="377" height="364" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                tabindex="0"></iframe>
+            </map>
+          </section>
+        </div>
+      </div>
+    </section>
   </main>
   <!-- footer -->
   <footer id="footer">
-    <div class="conteiner">
+    <div class="footer__items container">
       <div class="footer__item">
-        <div class="logo">
-          <img src="img/logo_footer.png" alt="logo icon">
-        </div>
-        <div class="search">
-          <form>
-            <input type="s" name="s" id="s" placeholder="Поиск">
-            <button class="search__btn" type="submit">
-              <img src="img/icon/search.png" alt="search button icon">
-            </button>
-          </form>
-        </div>
-        <div class="footer__signature">
-          <span>© 2013-2019, ООО «Бизнес Мебель» Все права защищены. Копирование любых материалов только с письменного
-            разрешения владельцев сайта.</span>
-        </div>
+        <picture class="logo">
+          <img src="img/logos/logo.png" alt="Логотип автоклиматика">
+        </picture>
+        <figcaption>автоклиматика</figcaption>
       </div>
-      <nav class="footer__nav">
-        <ul>
-          <li><a aria-current="page" href="">О компании</a></li>
-          <li><a href="">Каталог мебели</a></li>
-          <li><a href="">Наши работы</a></li>
-          <li><a href="">Материалы</a></li>
-          <li><a href="">Схема работы</a></li>
-          <li><a href="">Карта сайта</a></li>
-        </ul>
-        <ul>
-          <li><a href="">Акции</a></li>
-          <li><a href="">Блог</a></li>
-          <li><a href="">Партнерам</a></li>
-          <li><a href="">Отзывы</a></li>
+      <nav class="footer__item">
+        <ul class="footer__menu__items">
+          <li><a href="" aria-current="page">Главная</a></li>
+          <li><a href="">Каталог</a></li>
           <li><a href="">Контакты</a></li>
+          <li><a href="">Доставка и оплата</a></li>
+          <li><a href="">FAQ</a></li>
         </ul>
       </nav>
-      <div class="footer__contacts">
-        <div class="contacts__items">
-          <div class="item">
-            <p>
-              <span>Бесплатно по России</span><br>
-              <span><a href="tel:8 (800) 550-93-96">8 (800) 550-93-96</a></span>
-            </p>
-            <p>
-              <span>Мы на связи:</span><br>
-              <span>с 10:00 до 20:00 / пн-пт</span>
-            </p>
-          </div>
-          <div class="item">
-            <p>
-              <a href="tel:8 (495) 150-72-86">8 (495) 150-72-86</a>
-            </p>
-            <p>
-              <span>Отправляйте заявки:</span><br>
-              <span><a href="mailto:zakaz@mebel2biz.ru">zakaz@mebel2biz.ru</a></span>
-            </p>
-          </div>
-        </div>
-        <div class="social">
-          <span>Подписывайтесь:</span>
-          <ul>
-            <li><a href="#"><img src="img/icon/vk.png" alt="social icon"></a></li>
-            <li><a href="#"><img src="img/icon/facebook.png" alt="social icon"></a></li>
-            <li><a href="#"><img src="img/icon/twich.png" alt="social icon"></a></li>
-            <li><a href="#"><img src="img/icon/insta.png" alt="social icon"></a></li>
-          </ul>
-        </div>
-      </div>
+      <address class="footer__item">
+        <a class="icon__link mail" href="mailto:info@diavia.ru" target="_blank">info@diavia.ru</a>
+        <br>
+        <p class="icon__link phone">
+          <a href="tel:+7(495)7412445">+7 (495) 741-24-45</a><br>
+          <a href="tel:+7(495)1429654">+7 (495) 142-96-54</a>
+        </p>
+        <a href="" class="icon__link location" target="_balnk">г.Москва, ул. Авиамоторная, д.48</a>
+        <a href="" class="icon__link location" target="_balnk">г.Москва, МКАД 74 км, д.5<br> (внешняя сторона)</a>
+        <picture class="card__icon">
+          <img src="img/icon/mastercard.png" alt="логотип mastercard">
+          <img src="img/icon/maestro.png" alt="логотип maestro">
+          <img src="img/icon/visa.png" alt="логотип visa">
+        </picture>
+      </address>
+    </div>
+    <div class="footer__signature container">
+      <small>2020 Разработка сайтов <a href="https://div-head.ru/" target="_blank">div-head.ru</a>.Все права
+        защищены</small>
     </div>
   </footer>
 
   <script src="js/jquery/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  <script src="js/uikit.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 
