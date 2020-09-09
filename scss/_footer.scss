@@ -13,17 +13,17 @@
 .footer__item {
   width: 100%;
   margin-top: 32px;
-  margin-bottom: 17px;
+  margin-bottom: 6px;
   &:nth-child(1) {
-    max-width: 382px;
+    max-width: 420px;
     margin-top: 0;
   }
   &:nth-child(2) {
     max-width: 180px;
-    margin-left: 50px;
+    margin-left: 70px;
   }
   &:nth-child(3) {
-    max-width: 265px;
+    max-width: 240px;
   }
   .logo {
     margin: -15px auto 0;
@@ -31,6 +31,7 @@
     width: 100%;
   }
   figcaption {
+    margin-top: -6px;
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
@@ -66,7 +67,7 @@
   line-height: 18px;
   &::before {
     position: absolute;
-    left: -34px;
+    left: -40px;
   }
   &.mail {
     &::before {
@@ -85,7 +86,10 @@
   }
 }
 .footer__signature {
+  color: #777777;
+  padding-left: 43px;
   a {
+    color: #777777 !important;
     text-decoration: underline;
     &:hover {
       text-decoration: none;
