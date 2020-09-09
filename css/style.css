@@ -1209,7 +1209,7 @@ ins {
 .category__product-item .button__add_to_cart {
   display: block;
   width: 100%;
-  min-height: 55px;
+  min-height: 56px;
   max-width: 200px;
   background: -webkit-gradient(linear, left top, left bottom, from(#036094), color-stop(53.12%, rgba(3, 96, 148, 0)), to(#036094));
   background: linear-gradient(180deg, #036094 0%, rgba(3, 96, 148, 0) 53.12%, #036094 100%);
@@ -1219,9 +1219,10 @@ ins {
   border: 3px solid #036094;
   font-weight: bold;
   font-size: 14px;
+  line-height: 1;
   margin: 0 auto 10px;
   border-radius: 5px;
-  padding-top: 19px;
+  padding: 18px 0;
   position: relative;
   z-index: 1;
 }

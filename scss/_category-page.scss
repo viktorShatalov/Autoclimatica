@@ -387,7 +387,7 @@
   .button__add_to_cart {
     display: block;
     width: 100%;
-    min-height: 55px;
+    min-height: 56px;
     max-width: 200px;
     background: linear-gradient(
       180deg,
@@ -401,9 +401,10 @@
     border: 3px solid rgb(3, 96, 148);
     font-weight: bold;
     font-size: 14px;
+    line-height: 1;
     margin: 0 auto 10px;
     border-radius: 5px;
-    padding-top: 19px;
+    padding: 18px 0;
     position: relative;
     z-index: 1;
     &::after {
