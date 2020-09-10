@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Корзина автоклиматика</title>
+  <link rel="shortcut icon" href="" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- modal -->
+  <div class="modal " id="modal">
+    <div class="modal-body">
+      <div data-close-button class="close-button">
+        <span></span>
+      </div>
+      <div class="modal__content">
+        <span class="modal__content-head">Мы перезвоним Вам сами</span>
+        <form>
+          <input type="text" name="name" placeholder="Имя">
+          <input type="tel" name="phone" placeholder="Номер телефона">
+          <textarea name="massege" placeholder="Сообщение"></textarea>
+          <input type="submit" value="Отправить">
+        </form>
+      </div>
+    </div>
+  </div>
+  <div id="overlay"></div>
+  <!-- header -->
+  <header id="header">
+    <section class="header__top__row container">
+      <div class="header__search">
+        <form>
+          <label class="header__search-description">Быстрый поиск</label>
+          <input type="s" name="search" placeholder="Введите номер/название запчасти">
+          <button></button>
+        </form>
+      </div>
+    </section>
+    <section class="header__center__row container">
+      <div class="header__logo">
+        <picture class="logo">
+          <img src="img/logos/logo.png" alt="Логотип автоклиматика">
+        </picture>
+        <figcaption>автоклиматика</figcaption>
+        <div class="header__logo-bottom">
+          <picture class="left__img">
+            <img src="img/logos/logo_partners2.png" alt="логотип партнеров">
+          </picture>
+          <span>Официальный<br> дилер</span>
+          <picture class="right__img">
+            <img src="img/logos/logo_partners1.png" alt="логотип партнеров">
+          </picture>
+        </div>
+      </div>
+      <div class="header__center__row-description">
+        <span>Комфорт в вашем автомобиле</span>
+      </div>
+      <div class="burger"><span></span></div>
+    </section>
+    <section class="header__bottom__row container">
+      <nav class="header__menu">
+        <ul class="menu__items">
+          <li><a href="" aria-current="page">Главная</a></li>
+          <li><a href="">Каталог</a></li>
+          <li><a href="">Контакты</a></li>
+          <li><a href="">Доставка и оплата</a></li>
+          <li><a href="">FAQ</a></li>
+        </ul>
+      </nav>
+      <div id="cart" class="cart">
+        <a href="">
+          <button class="cart__btn">
+            <picture>
+              <img src="img/icon/cart.png" alt="картинка корзины интернет магазина автоклиматика">
+            </picture>
+            <span class="basket-btn__counter">1</span>
+          </button>
+        </a>
+      </div>
+    </section>
+  </header>
+  <!-- main -->
+  <main>
+    <section id="cart__page">
+      <div class="cart__heqding" style="background-image: url(img/cart/cart-bg-top.jpg);">
+        <h1>Корзина</h1>
+      </div>
+      <div class="cart__content container">
+        <div class="cart__content-head">
+          <ul>
+            <li>Товар</li>
+            <li></li>
+            <li>Цена</li>
+            <li>Количество</li>
+            <li>Удалить</li>
+          </ul>
+        </div>
+        <div class="cart__content-body">
+          <ul class="cart__items">
+            <li class="cart__item">
+              <img class="cart__item-img" src="img/cart/item.jpg" alt="название товара">
+              <p class="cart__item-name">
+                <span class="name">Название может быть очень длинным</span>
+                <span class="article">Артикул: <span>26456412321</span></span>
+              </p>
+              <span class="cart__item-price"><span>2900</span>руб.</span>
+              <span class="cart__item-counter">1</span>
+              <a href="" class="cart__item-delete"></a>
+            </li>
+            <li class="cart__item">
+              <img class="cart__item-img" src="img/cart/item.jpg" alt="название товара">
+              <p class="cart__item-name">
+                <span class="name">Название может быть очень длиннымНазвание может быть очень длиннымНазвание может быть очень длиннырмНазвание может быть очень длиннымНазвhрание может быть очень длиннымНазрвание может быть оч ень длиннымр</span>
+                <span class="article">Артикул: <span>26456412321</span></span>
+              </p>
+              <span class="cart__item-price"><span>2900</span>руб.</span>
+              <span class="cart__item-counter">1</span>
+              <a href="" class="cart__item-delete"></a>
+            </li>
+            <li class="cart__item">
+              <img class="cart__item-img" src="img/cart/item.jpg" alt="название товара">
+              <p class="cart__item-name">
+                <span class="name">Название может быть очень длинным</span>
+                <span class="article">Артикул: <span>26456412321</span></span>
+              </p>
+              <span class="cart__item-price"><span>2900</span>руб.</span>
+              <span class="cart__item-counter">1</span>
+              <a href="" class="cart__item-delete"></a>
+            </li>
+            <li class="cart__item">
+              <img class="cart__item-img" src="img/cart/item.jpg" alt="название товара">
+              <p class="cart__item-name">
+                <span class="name">Название может быть очень длинным</span>
+                <span class="article">Артикул: <span>26456412321</span></span>
+              </p>
+              <span class="cart__item-price"><span>2900</span>руб.</span>
+              <span class="cart__item-counter">1</span>
+              <a href="" class="cart__item-delete"></a>
+            </li>
+          </ul>
+        </div>
+        <div id="sum">
+          <p>
+            <span class="sum-text">Итого:</span>
+            <span>
+              <span class="woocommerce-Price-amount">8700</span>
+              <span class="woocommerce-Price-currencySymbol">руб.</span>
+            </span>
+          </p>
+        </div>
+        <div id="cartForm">
+          <a href="">Продолжить</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- footer -->
+  <footer id="footer">
+    <div class="footer__items container">
+      <div class="footer__item">
+        <picture class="logo">
+          <img src="img/logos/logo.png" alt="Логотип автоклиматика">
+        </picture>
+        <figcaption>автоклиматика</figcaption>
+      </div>
+      <nav class="footer__item">
+        <ul class="footer__menu__items">
+          <li><a href="" aria-current="page">Главная</a></li>
+          <li><a href="">Каталог</a></li>
+          <li><a href="">Контакты</a></li>
+          <li><a href="">Доставка и оплата</a></li>
+          <li><a href="">FAQ</a></li>
+        </ul>
+      </nav>
+      <address class="footer__item">
+        <a class="icon__link mail" href="mailto:info@diavia.ru" target="_blank">info@diavia.ru</a>
+        <br>
+        <p class="icon__link phone">
+          <a href="tel:+7(495)7412445">+7 (495) 741-24-45</a><br>
+          <a href="tel:+7(495)1429654">+7 (495) 142-96-54</a>
+        </p>
+        <a href="" class="icon__link location" target="_balnk">г.Москва, ул. Авиамоторная, д.48</a>
+        <a href="" class="icon__link location" target="_balnk">г.Москва, МКАД 74 км, д.5<br> (внешняя сторона)</a>
+        <picture class="card__icon">
+          <img src="img/icon/mastercard.png" alt="логотип mastercard">
+          <img src="img/icon/maestro.png" alt="логотип maestro">
+          <img src="img/icon/visa.png" alt="логотип visa">
+        </picture>
+      </address>
+    </div>
+    <div class="footer__signature container">
+      <small>2020 Разработка сайтов <a href="https://div-head.ru/" target="_blank">div-head.ru</a>.Все права
+        защищены</small>
+    </div>
+  </footer>
+
+  <script src="js/jquery/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
