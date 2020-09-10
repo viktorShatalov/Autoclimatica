@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Корзина автоклиматика</title>
+  <title>Оформление заказа автоклиматика</title>
   <link rel="shortcut icon" href="" type="image/x-icon">
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <link rel="stylesheet" href="css/style.css">
@@ -85,75 +85,76 @@
   </header>
   <!-- main -->
   <main>
-    <section id="cart__page">
-      <div class="cart__heqding" style="background-image: url(img/cart/cart-bg-top.jpg);">
-        <h1>Корзина</h1>
-      </div>
-      <div class="cart__content container">
-        <div class="cart__content-head">
-          <ul>
-            <li>Товар</li>
-            <li></li>
-            <li>Цена</li>
-            <li>Количество</li>
-            <li>Удалить</li>
-          </ul>
-        </div>
-        <div class="cart__content-body">
-          <ul class="cart__items">
-            <li class="cart__item">
-              <img class="cart__item-img" src="img/cart/item.jpg" alt="название товара">
-              <p class="cart__item-name">
-                <span class="name">Название может быть очень длинным</span>
-                <span class="article">Артикул: <span>26456412321</span></span>
+    <section id="ordering__page">
+      <div class="ordering__heqding" style="background-image: url(img/cart/ordering.jpg);"></div>
+      <div class="ordering__content container">
+        <span class="ordering__content-description">Для оформления заказа заполните контактные данные</span>
+        <article class="ordering__content-items">
+          <section class="ordering__content-items__left">
+            <form>
+              <legend class="head">Контактные данные</legend>
+              <small>Поля отмеченные “*” - обязательны к заполнению</small>
+              <p>
+                <input type="text" class="form__controll" placeholder="Имя*">
               </p>
-              <span class="cart__item-price"><span>2900</span>руб.</span>
-              <span class="cart__item-counter">1</span>
-              <a href="" class="cart__item-delete"></a>
-            </li>
-            <li class="cart__item">
-              <img class="cart__item-img" src="img/cart/item.jpg" alt="название товара">
-              <p class="cart__item-name">
-                <span class="name">Название может быть очень длиннымНазвание может быть очень длиннымНазвание может быть
-                  очень длиннырмНазвание может быть очень длиннымНазвhрание может быть очень длиннымНазрвание может быть
-                  оч ень длиннымр</span>
-                <span class="article">Артикул: <span>26456412321</span></span>
+              <p>
+                <input type="tel" class="form__controll" placeholder="Номер телефона*">
               </p>
-              <span class="cart__item-price"><span>2900</span>руб.</span>
-              <span class="cart__item-counter">1</span>
-              <a href="" class="cart__item-delete"></a>
-            </li>
-            <li class="cart__item">
-              <img class="cart__item-img" src="img/cart/item.jpg" alt="название товара">
-              <p class="cart__item-name">
-                <span class="name">Название может быть очень длинным</span>
-                <span class="article">Артикул: <span>26456412321</span></span>
+              <p>
+                <input type="email" class="form__controll" placeholder="Электронный адрес">
               </p>
-              <span class="cart__item-price"><span>2900</span>руб.</span>
-              <span class="cart__item-counter">1</span>
-              <a href="" class="cart__item-delete"></a>
-            </li>
-            <li class="cart__item">
-              <img class="cart__item-img" src="img/cart/item.jpg" alt="название товара">
-              <p class="cart__item-name">
-                <span class="name">Название может быть очень длинным</span>
-                <span class="article">Артикул: <span>26456412321</span></span>
+              <p>
+                <textarea class="form__controll" placeholder="Комментарий к заказу"></textarea>
               </p>
-              <span class="cart__item-price"><span>2900</span>руб.</span>
-              <span class="cart__item-counter">1</span>
-              <a href="" class="cart__item-delete"></a>
-            </li>
-          </ul>
-        </div>
-        <summary id="sum">
-          <span class="sum-text">Итого:</span>
-          <span>
-            <span class="woocommerce-Price-amount">8700</span>
-            <span class="woocommerce-Price-currencySymbol">руб.</span>
-          </span>
-        </summary>
+            </form>
+          </section>
+          <section class="ordering__content-items__right">
+            <form class="delivery__method">
+              <legend class="head">Способ доставки</legend>
+              <span class="form__body">
+                <p>
+                  <input type="radio" class="form__controll-radio" id="radio-1" name="delivery__method" checked>
+                  <label for="radio-1">Самовывоз</label>
+                </p>
+                <p>
+                  <input type="radio" class="form__controll-radio" id="radio-2" name="delivery__method">
+                  <label for="radio-2">Курьерская доставка до станции метро 100р.</label>
+                </p>
+                <p>
+                  <input type="radio" class="form__controll-radio" id="radio-3" name="delivery__method">
+                  <label for="radio-3">Курьерская доставка по Москве 500р.</label>
+                </p>
+                <p>
+                  <input type="radio" class="form__controll-radio" id="radio-4" name="delivery__method">
+                  <label for="radio-4">Почта России</label>
+                </p>
+                <p>
+                  <input type="radio" class="form__controll-radio" id="radio-5" name="delivery__method">
+                  <label for="radio-5">Другая транспортная компания</label>
+                </p>
+              </span>
+            </form>
+            <form class="delivery__pay">
+              <legend class="head">Способ оплаты</legend>
+              <span class="form__body">
+                <p>
+                  <input type="radio" class="form__controll-radio" id="radio-6" name="delivery__pay" checked>
+                  <label for="radio-6">Наличный расчет при получении</label>
+                </p>
+                <p>
+                  <input type="radio" class="form__controll-radio" id="radio-7" name="delivery__pay">
+                  <label for="radio-7">Оплата ч/з расчетный счет</label>
+                </p>
+                <p>
+                  <input type="radio" class="form__controll-radio" id="radio-8" name="delivery__pay">
+                  <label for="radio-8">Оплата банковской картой на сайте</label>
+                </p>
+              </span>
+            </form>
+          </section>
+        </article>
         <div id="cartForm">
-          <a href="">Продолжить</a>
+          <a href="">Оформить заказ</a>
         </div>
       </div>
     </section>
