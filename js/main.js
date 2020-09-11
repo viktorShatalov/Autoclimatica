@@ -140,4 +140,29 @@ jQuery(document).ready(function ($) {
     jQuery(this).next().slide(500);
     jQuery(this).toggleClass("active");
   });
+
+  // let btn = jQuery(".button__add_to_cart");
+  // if (btn.text() === "нет в наличии") {
+  //   btn.css({
+  //     background: "none",
+  //   });
+  // }
+  jQuery(".aws-container .aws-search-form").css({
+    height: "35px",
+  });
+  jQuery(".aws-container .aws-search-field").css({
+    padding: "8px 11px",
+    "font-family": "inherit",
+    "font-size": "inherit",
+    "max-width": "290px",
+  });
+  jQuery(".aws-container").css({
+    width: "100%",
+  });
+  jQuery(".aws-search-result").css({
+    "max-width": "290px",
+  });
+  jQuery(".aws-search-clear").css({
+    right: "40px",
+  });
 });

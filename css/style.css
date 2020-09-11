@@ -184,6 +184,10 @@ ins {
           align-items: flex-start;
 }
 
+#breadcumbs ul li {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
 #breadcumbs ul li::after {
   content: "/";
   margin: 0 2px 0 0;
@@ -220,6 +224,44 @@ ins {
 
 .burger {
   display: none;
+}
+
+.woof_checkbox_term {
+  max-width: 10px;
+}
+
+.woof_reset_search_form {
+  background-color: transparent;
+  color: #0038ff;
+  font-size: 16px;
+  padding: 7px;
+  border: 1px solid #333333;
+  cursor: pointer;
+  width: 100%;
+}
+
+.woof_container_inner h4 {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.woof_block_html_items ul {
+  border: 1px solid #333333;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.woof_list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 45%;
 }
 
 @font-face {
@@ -1079,7 +1121,7 @@ map[name="east__map"] iframe {
   max-width: 210px;
 }
 
-.left__sidebar ul {
+.left__sidebar nav ul {
   background-color: white;
   position: relative;
   -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
@@ -1089,7 +1131,7 @@ map[name="east__map"] iframe {
   padding-top: 12px;
 }
 
-.left__sidebar ul::before {
+.left__sidebar nav ul::before {
   content: "";
   display: block;
   width: 100%;
@@ -1102,11 +1144,11 @@ map[name="east__map"] iframe {
           box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.25);
 }
 
-.left__sidebar ul li {
+.left__sidebar nav ul li {
   padding-left: 9px;
 }
 
-.left__sidebar ul li::after {
+.left__sidebar nav ul li::after {
   content: "";
   display: block;
   width: 190px;
@@ -1114,7 +1156,7 @@ map[name="east__map"] iframe {
   background-color: #777777;
 }
 
-.left__sidebar ul li a {
+.left__sidebar nav ul li a {
   color: #333333;
   display: inline-block;
   padding: 6px 0;
@@ -1124,7 +1166,7 @@ map[name="east__map"] iframe {
   transition: all 0.4s ease-in-out;
 }
 
-.left__sidebar ul li a:hover {
+.left__sidebar nav ul li a:hover {
   color: #036094;
 }
 
@@ -1192,6 +1234,14 @@ map[name="east__map"] iframe {
 .category__filtr {
   padding: 20px 0;
   margin-bottom: 25px;
+}
+
+.category__filtr > span {
+  font-size: 18px;
+  line-height: 21px;
+  color: #0038ff;
+  display: inline-block;
+  margin-bottom: 12px;
 }
 
 .stock__items {
@@ -1377,6 +1427,23 @@ map[name="east__map"] iframe {
   width: 100%;
 }
 
+.search-sort .search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.search-sort .search .search-description {
+  display: inline-block;
+  font-size: 20px;
+  line-height: 23px;
+  color: white;
+  margin-right: 15px;
+}
+
 .search-sort form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1430,6 +1497,7 @@ map[name="east__map"] iframe {
 }
 
 .category__product-item {
+  min-height: 355px;
   padding: 0 10px;
   margin: 0 1px 12px;
   border-bottom: 1px dashed #ff3d00;
@@ -1497,6 +1565,9 @@ map[name="east__map"] iframe {
 
 .category__product-item .item__name {
   margin-bottom: 10px;
+  height: 47px;
+  color: #333333;
+  overflow: hidden;
 }
 
 .category__product-item p {
@@ -1511,6 +1582,7 @@ map[name="east__map"] iframe {
   margin: 10px 0;
   display: inline-block;
   width: 100%;
+  min-height: 21px;
   text-align: center;
   font-weight: bold;
   font-size: 18px;
@@ -1572,6 +1644,24 @@ map[name="east__map"] iframe {
 
 .button__add_to_cart.added::after {
   opacity: 0;
+}
+
+.button__add_to_cart.disabled {
+  background: white;
+}
+
+.button__add_to_cart.disabled::after {
+  content: none;
+}
+
+.button__add_to_cart.disabled:hover {
+  color: #1d475f;
+  background: transparent;
+  border: 3px solid #036094;
+}
+
+.aws-container .aws-search-field {
+  border-radius: 5px !important;
 }
 
 .show__more {
@@ -1655,21 +1745,6 @@ map[name="east__map"] iframe {
           align-items: flex-start;
 }
 
-.category__description-third article,
-.category__description-third picture {
-  max-width: 50%;
-}
-
-.category__description-third article img,
-.category__description-third picture img {
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.category__description-third picture {
-  margin-top: -23px;
-}
-
 .category__description-third p {
   margin-bottom: 23px;
 }
@@ -1693,6 +1768,7 @@ map[name="east__map"] iframe {
 }
 
 .card__product-left {
+  width: 100%;
   max-width: 503px;
 }
 
