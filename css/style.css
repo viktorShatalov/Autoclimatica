@@ -1876,6 +1876,154 @@ map[name="east__map"] iframe {
   margin-bottom: 35px;
 }
 
+.accordion-items {
+  padding-left: 40px;
+}
+
+#faq__page {
+  margin-bottom: 30px;
+}
+
+#faq__page h1,
+#faq__page h2 {
+  color: #0038ff;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+#faq__page #breadcumbs {
+  margin: 20px 0;
+}
+
+#faq__page article {
+  margin-bottom: 70px;
+}
+
+#faq__page .stock__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+#faq__page .stock {
+  width: 100%;
+  max-width: 557px;
+  min-height: 360px;
+  padding-top: 20px;
+}
+
+#faq__page .stock h3 {
+  font-size: 25px;
+  line-height: 30px;
+  max-width: 100%;
+  margin-bottom: 11px;
+}
+
+#faq__page .stock p {
+  font-size: 20px;
+  line-height: 24px;
+  max-width: 100%;
+}
+
+#faq__page .stock__pseudo {
+  width: 215px;
+  height: 50px;
+  font-size: 27px;
+  line-height: 32px;
+  background-image: url(../img/triangle-stock-bg-big.png);
+}
+
+#faq__page .stock__name {
+  font-size: 32px;
+  line-height: 25px;
+  max-width: 285px;
+  margin: 0px 0 13px auto;
+}
+
+#faq__page .modal__btn.stock__btn {
+  max-width: 200px;
+  margin: 0 auto 32px;
+}
+
+#faq__page .modal__btn.stock__btn a {
+  text-align: center;
+  width: 100%;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  color: #1d475f;
+  padding: 18px 0;
+  border-radius: 5px;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  position: relative;
+  z-index: 1;
+}
+
+#faq__page .modal__btn.stock__btn a::after {
+  content: "";
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(3, 96, 148, 0)), color-stop(49.48%, #036094), to(rgba(3, 96, 148, 0)));
+  background: linear-gradient(180deg, rgba(3, 96, 148, 0) 0%, #036094 49.48%, rgba(3, 96, 148, 0) 100%);
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+#faq__page .modal__btn.stock__btn a:hover {
+  color: white;
+}
+
+#faq__page .modal__btn.stock__btn a:hover::after {
+  opacity: 1;
+}
+
+.accordion-item-head {
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 25px 0 0;
+  position: relative;
+  width: 100%;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.accordion-item-head::after {
+  content: url(../img/icon/arrow__down-orange.png);
+  position: absolute;
+  top: 25px;
+  left: -40px;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.accordion-item-head.active::after {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.accordion-item__content {
+  padding: 20px 0 0;
+  line-height: 20px;
+}
+
 .cart__heqding,
 .ordering__heqding {
   background-repeat: no-repeat;

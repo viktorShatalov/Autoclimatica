@@ -131,4 +131,13 @@ jQuery(document).ready(function ($) {
       },
     ],
   });
+
+  // accordion
+
+  jQuery(".accordion-item__content").hide();
+
+  jQuery(".accordion-item-head").on("click", function () {
+    jQuery(this).next().slide(500);
+    jQuery(this).toggleClass("active");
+  });
 });
