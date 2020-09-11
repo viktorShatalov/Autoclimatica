@@ -129,9 +129,10 @@ ins {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   color: transparent;
-  background-color: rgba(51, 51, 51, 0.8);
-  height: 40px;
-  width: 42px;
+  background: #036094;
+  border-radius: 10px;
+  height: 44px;
+  width: 36px;
   cursor: pointer;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
@@ -139,28 +140,30 @@ ins {
 
 .slick-prev::before,
 .slick-next::before {
-  content: url(../img/icon/arrow_left.png);
+  content: url(../img/icon/arrow__down-white.png);
   position: absolute;
+  width: 17px;
+  height: 17px;
 }
 
 .slick-prev {
-  border-radius: 0 36px 36px 0;
-  left: 0;
+  left: 4px;
 }
 
 .slick-prev::before {
-  left: 10px;
+  left: 7px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 .slick-next {
-  right: 0;
-  border-radius: 36px 0 0 36px;
+  right: 4px;
 }
 
 .slick-next::before {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-  right: 10px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  right: 7px;
   bottom: 14px;
 }
 
@@ -1158,9 +1161,9 @@ map[name="east__map"] iframe {
   z-index: 1;
 }
 
-.heating__systems .head span,
-.сooling__systems .head span,
-.equipment .head span {
+.heating__systems .head a,
+.сooling__systems .head a,
+.equipment .head a {
   position: absolute;
   bottom: 9px;
   color: white;
@@ -1168,20 +1171,9 @@ map[name="east__map"] iframe {
   line-height: 21px;
   display: block;
   width: 100%;
-  max-width: 150px;
   text-transform: uppercase;
-  margin-left: 62px;
+  padding-left: 5px;
   margin-top: auto;
-  cursor: pointer;
-}
-
-.heating__systems .head span::before,
-.сooling__systems .head span::before,
-.equipment .head span::before {
-  content: url(../img/icon/arrow__down-white.png);
-  position: absolute;
-  bottom: 0;
-  left: -50px;
 }
 
 .сooling__systems .head {
@@ -1191,14 +1183,6 @@ map[name="east__map"] iframe {
 
 .equipment .head {
   background-image: url(../img/triangle-bg-grey.png);
-}
-
-.equipment .head span {
-  margin-left: 45px;
-}
-
-.equipment .head span::before {
-  left: -37px;
 }
 
 .category__navigation {
@@ -1802,12 +1786,94 @@ map[name="east__map"] iframe {
   text-align: justify;
 }
 
+#similar__products,
+#recently__viewed {
+  margin-bottom: 20px;
+}
+
 #similar__products h2,
 #recently__viewed h2 {
   font-size: 32px;
   line-height: 37px;
+  font-weight: normal;
   text-transform: uppercase;
   color: #1d475f;
+  margin-bottom: 20px;
+}
+
+.similar__products-items,
+.recently__viewed-items {
+  background: #ededed;
+  border: 1px solid #777777;
+  padding: 28px 45px;
+}
+
+.similar__products-items .item,
+.recently__viewed-items .item {
+  max-width: 185px;
+  text-align: center;
+  border-radius: 10px;
+  margin: 0 13px;
+}
+
+.similar__products-items .item a,
+.recently__viewed-items .item a {
+  color: #333333;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.similar__products-items .item a:hover .item__name,
+.recently__viewed-items .item a:hover .item__name {
+  color: #0038ff;
+}
+
+.similar__products-items .item__img,
+.recently__viewed-items .item__img {
+  display: block;
+  width: 185px;
+  height: 138px;
+  margin-bottom: 7px;
+}
+
+.similar__products-items .item__img img,
+.recently__viewed-items .item__img img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.similar__products-items .item__name,
+.recently__viewed-items .item__name {
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 17px;
+  display: inline-block;
+  width: 100%;
+}
+
+.similar__products-items .item__article,
+.recently__viewed-items .item__article {
+  font-size: 12px;
+  line-height: 14px;
+  margin-bottom: 17px;
+  display: inline-block;
+  width: 100%;
+}
+
+.similar__products-items .item__price,
+.recently__viewed-items .item__price {
+  font-size: 18px;
+  line-height: 21px;
+  display: inline-block;
+  width: 100%;
+  font-weight: bold;
+}
+
+#recently__viewed {
+  margin-bottom: 35px;
 }
 
 .cart__heqding,

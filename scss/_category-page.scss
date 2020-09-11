@@ -91,7 +91,7 @@
     background-size: 100%;
     background-position: center top;
     z-index: 1;
-    span {
+    a {
       position: absolute;
       bottom: 9px;
       color: white;
@@ -99,17 +99,14 @@
       line-height: 21px;
       display: block;
       width: 100%;
-      max-width: 150px;
       text-transform: uppercase;
-      margin-left: 62px;
+      padding-left: 5px;
       margin-top: auto;
-      cursor: pointer;
-      &::before {
-        content: url(../img/icon/arrow__down-white.png);
-        position: absolute;
-        bottom: 0;
-        left: -50px;
-      }
+      // &::before {
+      //   content: url(../img/icon/arrow__down-white.png);
+      //   position: absolute;
+      //   bottom: 0;
+      // }
     }
   }
 }
@@ -122,12 +119,6 @@
 .equipment {
   .head {
     background-image: url(../img/triangle-bg-grey.png);
-    span {
-      margin-left: 45px;
-      &::before {
-        left: -37px;
-      }
-    }
   }
 }
 .category__navigation {

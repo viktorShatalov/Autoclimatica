@@ -12,8 +12,18 @@ jQuery(document).ready(function ($) {
   if (window.innerWidth > 425) {
   }
 
-  if (window.innerWidth < 425) {
+  if (window.innerWidth >= 320 && window.innerWidth <= 768) {
     // переношу мобильный контент
+    // slideUp category
+    jQuery(".heating__systems .head").on("click", function () {
+      jQuery(".heating__systems ul").children().slideToggle("slow");
+    });
+    jQuery(".сooling__systems .head").on("click", function () {
+      jQuery(".сooling__systems ul").children().slideToggle("slow");
+    });
+    jQuery(".equipment .head").on("click", function () {
+      jQuery(".equipment ul").children().slideToggle("slow");
+    });
   }
   // accordion
 
@@ -65,6 +75,7 @@ jQuery(document).ready(function ($) {
     }
   }
   modal();
+  // sliders
 
   jQuery(".first__slider").slick({
     slidesToShow: 1,
@@ -75,14 +86,49 @@ jQuery(document).ready(function ($) {
     autoplay: true,
     autoplaySpeed: 4000,
   });
-  // slideUp category
-  jQuery(".heating__systems .head").on("click", function () {
-    jQuery(".heating__systems ul").children().slideToggle("slow");
+
+  jQuery(".similar__products-items").slick({
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    infinite: true,
+    arrows: true,
+    dots: false,
+    autoplay: false,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+    ],
   });
-  jQuery(".сooling__systems .head").on("click", function () {
-    jQuery(".сooling__systems ul").children().slideToggle("slow");
-  });
-  jQuery(".equipment .head").on("click", function () {
-    jQuery(".equipment ul").children().slideToggle("slow");
+  jQuery(".recently__viewed-items").slick({
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    infinite: false,
+    arrows: true,
+    dots: false,
+    variableWidth: true,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+    ],
   });
 });

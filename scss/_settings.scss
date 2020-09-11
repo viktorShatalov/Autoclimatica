@@ -110,29 +110,31 @@ ins {
   top: 50%;
   transform: translateY(-50%);
   color: transparent;
-  background-color: rgba(51, 51, 51, 0.8);
-  height: 40px;
-  width: 42px;
+  background: #036094;
+  border-radius: 10px;
+  height: 44px;
+  width: 36px;
   cursor: pointer;
   @include transition;
   &::before {
-    content: url(../img/icon/arrow_left.png);
+    content: url(../img/icon/arrow__down-white.png);
     position: absolute;
+    width: 17px;
+    height: 17px;
   }
 }
 .slick-prev {
-  border-radius: 0 36px 36px 0;
-  left: 0;
+  left: 4px;
   &::before {
-    left: 10px;
+    left: 7px;
+    transform: rotate(90deg);
   }
 }
 .slick-next {
-  right: 0;
-  border-radius: 36px 0 0 36px;
+  right: 4px;
   &::before {
-    transform: rotate(180deg);
-    right: 10px;
+    transform: rotate(-90deg);
+    right: 7px;
     bottom: 14px;
   }
 }
