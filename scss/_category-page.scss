@@ -468,12 +468,17 @@
     }
   }
 }
+.added_to_cart {
+  display: none;
+}
 .aws-container .aws-search-field {
   border-radius: 5px !important;
 }
-.show__more {
+.show__more,
+.wpap-loadmore-button {
   display: block;
   width: 100%;
+  height: auto !important;
   max-width: 200px;
   text-align: center;
   margin: 35px auto 50px;

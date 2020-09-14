@@ -31,6 +31,8 @@
       margin-bottom: 11px;
       &:last-child {
         text-align: center;
+        display: inline-block;
+        width: 100%;
       }
     }
   }
@@ -123,8 +125,11 @@
 #cartForm {
   text-align: center;
   margin-bottom: 30px;
-  a {
+
+  a,
+  #place_order {
     display: block;
+    cursor: pointer;
     width: 100%;
     max-width: 200px;
     margin: 0 auto;
@@ -230,7 +235,7 @@ textarea.form__controll {
 }
 .ordering__content-items__right {
   .head {
-    margin-bottom: 35px;
+    margin-bottom: 25px;
   }
 }
 form {
@@ -240,9 +245,9 @@ form {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 5px;
     display: block;
-    padding: 10px 10px 0 35px;
+    padding: 10px 10px 0 10px;
   }
-  p {
+  li {
     display: flex;
     align-items: center;
     margin-bottom: 15px;
@@ -288,8 +293,8 @@ form {
     }
   }
   label {
-    color: white;
     font-size: 14px;
+    line-height: 14px;
   }
   &.delivery__pay {
     margin-bottom: 45px;
@@ -297,5 +302,14 @@ form {
       padding-top: 25px;
       margin-bottom: 15px;
     }
+  }
+}
+#payment {
+  margin-top: 20px;
+}
+#shipping_method,
+.payment_methods {
+  label {
+    color: white;
   }
 }

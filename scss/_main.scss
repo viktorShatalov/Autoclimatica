@@ -440,14 +440,14 @@
         }
         &:nth-child(1),
         &:nth-child(2) {
-          font-size: 18px;
-          line-height: 21px;
-          margin-bottom: 15px;
+          font-size: 18px !important;
+          line-height: 21px !important;
+          margin-bottom: 15px !important;
         }
         &:nth-child(3) {
-          font-size: 14px;
-          line-height: 18px;
-          max-width: 137px;
+          font-size: 14px !important;
+          line-height: 18px !important;
+          max-width: 137px !important;
         }
       }
     }

@@ -1,0 +1,196 @@
+#contacts__page,
+#delivery__payment-page {
+  .cart__heqding {
+    margin-bottom: 0;
+  }
+  .container {
+    padding: 0 55px;
+  }
+  #breadcumbs {
+    .container {
+      padding: 0;
+    }
+  }
+  #contacts {
+    h2,
+    h3 {
+      padding-left: 56px;
+      &::after {
+        content: none;
+      }
+    }
+    &.container {
+      padding: 0;
+    }
+  }
+  h2 {
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: rgb(3, 96, 148);
+    margin-bottom: 30px;
+  }
+  p {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 22px;
+  }
+}
+.contacts__page-about {
+  h2 {
+    text-transform: unset !important;
+    font-size: 22px !important;
+    line-height: 26px !important;
+    position: relative;
+    display: block !important;
+    color: #333333 !important;
+    text-align: center !important;
+    width: 100%;
+    padding-left: 110px;
+    max-width: 80%;
+    margin: 0 auto 25px;
+    &::before {
+      content: "";
+      width: 70px;
+      height: 70px;
+      position: absolute;
+      left: 60px;
+      top: -23px;
+      background-image: url(../img/logos/logo.png);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+    }
+  }
+
+  ul {
+    padding-left: 56px;
+    li {
+      margin-bottom: 22px;
+      font-size: 18px;
+      line-height: 22px;
+    }
+  }
+}
+.contacts__page-consultation {
+  width: 100%;
+  max-width: 510px;
+  margin: 0 auto 30px;
+  p {
+    font-weight: bold;
+  }
+  a {
+    font-size: 20px;
+  }
+  .phone {
+    color: rgb(3, 96, 148);
+  }
+  .mail {
+    color: rgb(51, 51, 51);
+  }
+}
+.contacts__page-vacancy {
+  @include flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.vacancy__left {
+  width: 100%;
+  max-width: 300px;
+  img {
+    object-fit: cover;
+  }
+}
+.vacancy__right {
+  width: 100%;
+  max-width: 730px;
+  .phone {
+    color: rgb(3, 96, 148);
+    font-size: 20px;
+    font-weight: bold;
+  }
+}
+.vacancy__right-itmes {
+  li {
+    font-weight: bold;
+    padding-left: 30px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 20px;
+  }
+}
+.contacts__page-partners {
+  padding-bottom: 30px;
+  h2 {
+    margin-bottom: 40px;
+  }
+}
+.partners__container {
+  @include flex;
+  justify-content: space-between;
+}
+.partners__container-left {
+  width: 100%;
+  max-width: 715px;
+  li a {
+    font-size: 18px;
+    line-height: 28px;
+    color: rgb(29, 71, 95);
+    margin-bottom: 15px;
+    @include transition;
+    &:hover {
+      color: rgb(255, 0, 0);
+    }
+  }
+}
+.partners__container-right {
+  width: 100%;
+  max-width: 342px;
+}
+// delivery and payment
+.delivery__method-content__moscow {
+  margin-top: 20px;
+  h2 {
+    margin-bottom: 20px !important;
+  }
+  font-size: 24px;
+  line-height: 28px;
+  & > span {
+    display: inline-block;
+  }
+}
+#delivery__payment-page {
+  h2 {
+    text-align: center;
+  }
+}
+.delivery__method-content__region,
+.payment__method-content {
+  font-size: 18px;
+  line-height: 21px;
+  ul {
+    li {
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+  }
+}
+.payment__method-content {
+  padding-bottom: 30px;
+  p {
+    display: block;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    font-size: 18px !important;
+    line-height: 21px !important;
+    &:last-child {
+      margin-bottom: 0 !important;
+    }
+  }
+  a {
+    color: rgb(3, 96, 148);
+    font-weight: bold;
+  }
+}

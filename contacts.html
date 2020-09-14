@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакты автоклиматика</title>
+  <link rel="shortcut icon" href="" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- modal -->
+  <div class="modal " id="modal">
+    <div class="modal-body">
+      <div data-close-button class="close-button">
+        <span></span>
+      </div>
+      <div class="modal__content">
+        <span class="modal__content-head">Мы перезвоним Вам сами</span>
+        <form>
+          <input type="text" name="name" placeholder="Имя">
+          <input type="tel" name="phone" placeholder="Номер телефона">
+          <textarea name="massege" placeholder="Сообщение"></textarea>
+          <input type="submit" value="Отправить">
+        </form>
+      </div>
+    </div>
+  </div>
+  <div id="overlay"></div>
+  <!-- header -->
+  <header id="header">
+    <section class="header__top__row container">
+      <div class="header__search">
+        <form>
+          <label class="header__search-description">Быстрый поиск</label>
+          <input type="s" name="search" placeholder="Введите номер/название запчасти">
+          <button></button>
+        </form>
+      </div>
+    </section>
+    <section class="header__center__row container">
+      <div class="header__logo">
+        <picture class="logo">
+          <img src="img/logos/logo.png" alt="Логотип автоклиматика">
+        </picture>
+        <figcaption>автоклиматика</figcaption>
+        <div class="header__logo-bottom">
+          <picture class="left__img">
+            <img src="img/logos/logo_partners2.png" alt="логотип партнеров">
+          </picture>
+          <span>Официальный<br> дилер</span>
+          <picture class="right__img">
+            <img src="img/logos/logo_partners1.png" alt="логотип партнеров">
+          </picture>
+        </div>
+      </div>
+      <div class="header__center__row-description">
+        <span>Комфорт в вашем автомобиле</span>
+      </div>
+      <div class="burger"><span></span></div>
+    </section>
+    <section class="header__bottom__row container">
+      <nav class="header__menu">
+        <ul class="menu__items">
+          <li><a href="" aria-current="page">Главная</a></li>
+          <li><a href="">Каталог</a></li>
+          <li><a href="">Контакты</a></li>
+          <li><a href="">Доставка и оплата</a></li>
+          <li><a href="">FAQ</a></li>
+        </ul>
+      </nav>
+      <div id="cart" class="cart">
+        <a href="">
+          <button class="cart__btn">
+            <picture>
+              <img src="img/icon/cart.png" alt="картинка корзины интернет магазина автоклиматика">
+            </picture>
+            <span class="basket-btn__counter">1</span>
+          </button>
+        </a>
+      </div>
+    </section>
+  </header>
+  <!-- main -->
+  <main>
+    <section id="contacts__page">
+      <div class="cart__heqding" style="background-image: url(img/contacts-bg.jpg);">
+        <h1>КОНТАКТЫ</h1>
+      </div>
+      <div class="container">
+        <!-- breadcumps -->
+        <nav id="breadcumbs">
+          <ul class="container">
+            <li>
+              <a href="#">Главная</a>
+            </li>
+            <li>
+              <a href="#">Каталог</a>
+            </li>
+            <li>
+              <span>next page</span>
+            </li>
+          </ul>
+        </nav>
+        <!-- contacts_content -->
+        <section class="contacts__page-about">
+          <h2>АВТОКЛИМАТИКА - ваш надежный помощник, начиная с 2000 года.</h2>
+          <p>Климатическое и дополнительное оборудования для автомобилей:</p>
+          <ul>
+            <li>Предпусковые обогреватели.</li>
+            <li>Отопители Webasto и Eberspacher.</li>
+            <li>Автокондиционеры.</li>
+            <li>Ремонт, заправка автомобильных кондиционеров.</li>
+            <li>Установка люков. </li>
+            <li>Установка подогрева сидений на любые автомобили.</li>
+          </ul>
+          <p>Мы одна из нескольких старейших и опытнейших фирм по работе с климатическим оборудованием в Москве.</p>
+          <p>Автоклиматика - официальный дилер <b>Webasto</b></p>
+          <p>Автоклиматика - официальный дилер <b>Eberspacher</b></p>
+          <p>У нас на складе широкий выбор предпусковых подогревателей и автономных отопителей. В наличии запчасти для
+            отопителей <b>Webasto</b> и <b>Eberspacher</b>, гибкая система скидок оптовым покупателям запчастей. Также
+            мы найдем любые
+            запчасти для вашего автокондиционера.</p>
+          <article class="contacts__page-consultation">
+            <p>За консультацией вы всегда можете обратиться к нашим менеджерам или оформить запрос по электронной
+              почте:</p>
+            <p>телефон <a class="phone" href="tel:+74957412445">+7(495) 741-24-45</a></p>
+            <p>e-mail: <a class="mail" target="_balnk" href="mailto:info@diavia.ru">info@diavia.ru</a></p>
+          </article>
+        </section>
+        <section class="contacts__page-vacancy">
+          <div class="vacancy__left">
+            <img src="img/vacancy.jpg" alt="Картинка для вакансий">
+          </div>
+          <div class="vacancy__right">
+            <h2>Вакансии</h2>
+            <p>В сеть установочных центров автономных отопителей "Автоклиматика" требуются :</p>
+            <ul class="vacancy__right-itmes">
+              <li> - Мастер установщик отопителей Webasto и Eberspacher (вебасто, еберспехер)</li>
+              <li> - Помощник мастера по установке и ремонту отопителей Webasto и Eberspacher</li>
+            </ul>
+            <p>Мы обязательно проводим обучение и сертифицируем наших специалистов.</p>
+            <p>Опыт работы приветствуется, ЗП от 50000р.</p>
+            <p>Телефон для соискателей: <a class="phone" href="tel:+74951429654">+7 (495) 142-96-54</a></p>
+          </div>
+        </section>
+        <section class="contacts__page-partners">
+          <h2>Наши партнеры</h2>
+          <div class="partners__container">
+            <ul class="partners__container-left">
+              <li><a href="">Техцентр</a></li>
+              <li><a href="">Установочный центр дополнительного оборудования</a></li>
+              <li><a href="">Интернет-магазин красивых букетов</a></li>
+              <li><a href="">Ателье кожаных изделий</a></li>
+            </ul>
+            <div class="partners__container-right">
+              <img src="img/partners.jpg" alt="картинка партнеры пожимают руки">
+            </div>
+          </div>
+        </section>
+      </div>
+      <section id="contacts" class="container">
+        <h2>Как нас найти</h2>
+        <div class="contacts__content">
+          <div class="left__map">
+            <h3>Автоклиматика-Восток</h3>
+            <section class="left__map-content">
+              <address class="map-content-adress">
+                <p>Адрес: г.Москва, Авиамоторная ул., д.48</p>
+                <p>Тел.:<a href="tel:+74957412445"> +7(495) 741-24-45</a></p>
+                <p>Режим работы:<br> Пн. с 10.00 до 19.00 Вт. с 10.00 до 19.00 Ср. с 10.00 до 19.00 Чт. с 10.00 до
+                  19.00 Пт. с
+                  10.00 до 19.00 Сб. с 10.00 до 19.00 Вс. выходной</p>
+              </address>
+              <map name="east__map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2246.2580635506556!2d37.71622821539029!3d55.73664500070622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414ab54bbfc3f3e5%3A0x4a788a50c663e741!2z0YPQuy4g0JDQstC40LDQvNC-0YLQvtGA0L3QsNGPLCA0OCwg0JzQvtGB0LrQstCwLCDQoNC-0YHRgdC40Y8sIDExMTAyNA!5e0!3m2!1sru!2sua!4v1599390540496!5m2!1sru!2sua"
+                  width="377" height="364" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                  tabindex="0"></iframe>
+              </map>
+            </section>
+          </div>
+          <div class="right__map">
+            <h3>Автоклиматика-север</h3>
+            <section class="right__map-content">
+              <address class="map-content-adress">
+                <p>Адрес: г.Москва, МКАД 74 км., д.5</p>
+                <p>Тел.:<a href="tel:+74951429654"> +7 (495) 142-96-54</a></p>
+                <p>Режим работы:<br> Пн. с 10.00 до 19.00 Вт. с 10.00 до 19.00 Ср. с 10.00 до 19.00 Чт. с 10.00 до
+                  19.00 Пт. с
+                  10.00 до 19.00 Сб. с 10.00 до 19.00 Вс. выходной</p>
+              </address>
+              <map name="north__map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2238.099600296101!2d37.42874471539687!3d55.878286889775055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b538624b02448f%3A0x164e8b8b0d364a76!2z0JzQmtCQ0JQgNzQg0LrQvCAo0LLQvdC10YjQvS4pLCA1LCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjywgMTQxNDA3!5e0!3m2!1sru!2sua!4v1599390788065!5m2!1sru!2sua"
+                  width="377" height="364" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                  tabindex="0"></iframe>
+              </map>
+            </section>
+          </div>
+        </div>
+      </section>
+    </section>
+  </main>
+  <!-- footer -->
+  <footer id="footer">
+    <div class="footer__items container">
+      <div class="footer__item">
+        <picture class="logo">
+          <img src="img/logos/logo.png" alt="Логотип автоклиматика">
+        </picture>
+        <figcaption>автоклиматика</figcaption>
+      </div>
+      <nav class="footer__item">
+        <ul class="footer__menu__items">
+          <li><a href="" aria-current="page">Главная</a></li>
+          <li><a href="">Каталог</a></li>
+          <li><a href="">Контакты</a></li>
+          <li><a href="">Доставка и оплата</a></li>
+          <li><a href="">FAQ</a></li>
+        </ul>
+      </nav>
+      <address class="footer__item">
+        <a class="icon__link mail" href="mailto:info@diavia.ru" target="_blank">info@diavia.ru</a>
+        <br>
+        <p class="icon__link phone">
+          <a href="tel:+7(495)7412445">+7 (495) 741-24-45</a><br>
+          <a href="tel:+7(495)1429654">+7 (495) 142-96-54</a>
+        </p>
+        <a href="" class="icon__link location" target="_balnk">г.Москва, ул. Авиамоторная, д.48</a>
+        <a href="" class="icon__link location" target="_balnk">г.Москва, МКАД 74 км, д.5<br> (внешняя сторона)</a>
+        <picture class="card__icon">
+          <img src="img/icon/mastercard.png" alt="логотип mastercard">
+          <img src="img/icon/maestro.png" alt="логотип maestro">
+          <img src="img/icon/visa.png" alt="логотип visa">
+        </picture>
+      </address>
+    </div>
+    <div class="footer__signature container">
+      <small>2020 Разработка сайтов <a href="https://div-head.ru/" target="_blank">div-head.ru</a>.Все права
+        защищены</small>
+    </div>
+  </footer>
+
+  <script src="js/jquery/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

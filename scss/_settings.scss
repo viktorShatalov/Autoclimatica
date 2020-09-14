@@ -25,7 +25,10 @@ body {
   padding: 0 15px;
 }
 main {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(189, 189, 189);
+  .container {
+    background-color: white;
+  }
 }
 
 form {
@@ -141,8 +144,7 @@ ins {
 
 // breadcumbs
 #breadcumbs {
-  padding: 0 5px;
-  margin-bottom: 15px;
+  padding: 22px 5px;
   ul {
     padding: 0;
     @include flex;

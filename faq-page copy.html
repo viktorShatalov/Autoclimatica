@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Вопросы автоклиматика</title>
+  <link rel="shortcut icon" href="" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- modal -->
+  <div class="modal " id="modal">
+    <div class="modal-body">
+      <div data-close-button class="close-button">
+        <span></span>
+      </div>
+      <div class="modal__content">
+        <span class="modal__content-head">Мы перезвоним Вам сами</span>
+        <form>
+          <input type="text" name="name" placeholder="Имя">
+          <input type="tel" name="phone" placeholder="Номер телефона">
+          <textarea name="massege" placeholder="Сообщение"></textarea>
+          <input type="submit" value="Отправить">
+        </form>
+      </div>
+    </div>
+  </div>
+  <div id="overlay"></div>
+  <!-- header -->
+  <header id="header">
+    <section class="header__top__row container">
+      <div class="header__search">
+        <form>
+          <label class="header__search-description">Быстрый поиск</label>
+          <input type="s" name="search" placeholder="Введите номер/название запчасти">
+          <button></button>
+        </form>
+      </div>
+    </section>
+    <section class="header__center__row container">
+      <div class="header__logo">
+        <picture class="logo">
+          <img src="img/logos/logo.png" alt="Логотип автоклиматика">
+        </picture>
+        <figcaption>автоклиматика</figcaption>
+        <div class="header__logo-bottom">
+          <picture class="left__img">
+            <img src="img/logos/logo_partners2.png" alt="логотип партнеров">
+          </picture>
+          <span>Официальный<br> дилер</span>
+          <picture class="right__img">
+            <img src="img/logos/logo_partners1.png" alt="логотип партнеров">
+          </picture>
+        </div>
+      </div>
+      <div class="header__center__row-description">
+        <span>Комфорт в вашем автомобиле</span>
+      </div>
+      <div class="burger"><span></span></div>
+    </section>
+    <section class="header__bottom__row container">
+      <nav class="header__menu">
+        <ul class="menu__items">
+          <li><a href="" aria-current="page">Главная</a></li>
+          <li><a href="">Каталог</a></li>
+          <li><a href="">Контакты</a></li>
+          <li><a href="">Доставка и оплата</a></li>
+          <li><a href="">FAQ</a></li>
+        </ul>
+      </nav>
+      <div id="cart" class="cart">
+        <a href="">
+          <button class="cart__btn">
+            <picture>
+              <img src="img/icon/cart.png" alt="картинка корзины интернет магазина автоклиматика">
+            </picture>
+            <span class="basket-btn__counter">1</span>
+          </button>
+        </a>
+      </div>
+    </section>
+  </header>
+  <!-- main -->
+  <main>
+    <section id="faq__page">
+      <div class="container">
+        <!-- breadcumps -->
+        <nav id="breadcumbs">
+          <ul class="container">
+            <li>
+              <a href="#">Главная</a>
+            </li>
+            <li>
+              <a href="#">Каталог</a>
+            </li>
+            <li>
+              <span>next page</span>
+            </li>
+          </ul>
+        </nav>
+        <article>
+          <h1>Часто задаваемые вопросы об автономных отопителях</h1>
+          <ul class="accordion-items">
+            <li class="accordion-item">
+              <h3 class="accordion-item-head">1. В чем отличие предпусковых подогревателей двигателя и воздушных
+                отопителей Webasto от конкурентов?</h3>
+              <p class="accordion-item__content">
+                - Камера сгорания отопителей Вебасто, в отличие от конкурентов, не имеет свечи зажигания, что
+                увеличивает ресурс работы отопителей Вебасто.<br> - Webasto в России создала широкую дилерскую сеть с
+                независимыми складами и сервисными центрами, что обеспечивает удобное обслуживание отопителей Вебасто и
+                наличие запчастей и комплектующих в любом удобном месте на территории России.<br> - И конечно же важно,
+                что
+                предпусковой отопитель Webasto выбран в качестве штатного оборудования многими автопроизводителями,
+                например Мерседес и БМВ
+              </p>
+            </li>
+            <li class="accordion-item">
+              <h3 class="accordion-item-head">2. В чем отличие предпусковых подогревателей двигателя и воздушных
+                отопителей Eberspacher от конкурентов? </h3>
+              <p class="accordion-item__content">
+                - Цена комплекта отопителя Эберспехер несколько ниже стоимости других немецких аналогов
+                <br>
+                - Существует разнесенная модификация предпусковых подогревателей двигателя Эберспехер, что дает
+                возможность установки
+                отопителя даже на сверхкомпактные автомобили.<br> - И конечно же важно, что предпусковой отопитель
+                Эберспехер выбран в качестве штатного оборудования многими автопроизводителями, например Volvo и Ford
+              </p>
+            </li>
+            <li class="accordion-item">
+              <h3 class="accordion-item-head">3. Какой орган управления предпусковым подогревателем лучше?</h3>
+              <p class="accordion-item__content">
+                - Орган управления для предпускового подогревателя выбирается по условиям использования. Например, если
+                у вас распланированный график дня, то Вам подойдет орган управления - минитаймер, если нет то требуется
+                независимое дистанционное управление. Дистанционный пульт управления сочетает в себе возможности как
+                дистанционного управления, так и запуска по времени, если нет возможности запустить отопитель из-за
+                расстояния, вы можете запрограммировать пульт и оставить его в машине. GSM модуль управления не имеет
+                ограничений по расстоянию.
+              </p>
+            </li>
+            <li class="accordion-item">
+              <h3 class="accordion-item-head">4. Сколько раз можно включать предпусковой подогреватель Вебасто на
+                незаведенной машине и насколько разрядиться аккумулятор?</h3>
+              <p class="accordion-item__content">
+                - Предпусковой отопитель Вебасто потребляет 22-32Вт, что равносильно двум лампочкам габаритов
+                автомобиля, такую нагрузку аккумулятор может держать очень долго даже на морозе, но более сильную
+                нагрузку дает режим включения штатной печки автомобиля для обогрева салона, который включается
+                отопителем Вебасто при температуре охлаждающей жидкости +30 градусов. Так что, более 4-5 раз включать
+                предпусковой подогреватель Вебасто на незаведенном автомобиле в сильные морозы не рекомендуется.
+              </p>
+            </li>
+            <li class="accordion-item">
+              <h3 class="accordion-item-head">5. Насколько опасен автономный отопитель Вебасто? Какова возможность
+                случайного возгорания?</h3>
+              <p class="accordion-item__content">
+                Какова возможность случайного возгорания? Отопители Вебасто уже много лет используются по всей Европе и
+                сертифицированы всеми возможными европейскими органами. К тому же во многих странах Европы
+                законодательно запрещена длительная стоянка транспортных средств с заведенным двигателем, и чтобы
+                переночевать или отдохнуть в машине в холодное время года просто необходим автономный отопитель. Поэтому
+                автономные отопители вебасто устанавливаются практически на все грузовые автомобили, включая автомобили
+                перевозящие опасные грузы, например бензин и химикаты, а это показатель наивысшего доверия к продукции
+                Вебасто. Единственной проблемой может оказаться некачественная и неумелая установка отопителя Вебасто,
+                поэтому надо тщательнее выбирать установщиков этого оборудования, т.к. опыт нарабатывается годами и не
+                покупается.
+              </p>
+            </li>
+          </ul>
+        </article>
+        <article>
+          <h2>Часто задаваемые вопросы про подогрев сидений</h2>
+          <ul class="accordion-items">
+            <li class="accordion-item">
+              <h3 class="accordion-item-head">1. В чем отличие предпусковых подогревателей двигателя и воздушных
+                отопителей Webasto от конкурентов?</h3>
+              <p class="accordion-item__content">
+                - Камера сгорания отопителей Вебасто, в отличие от конкурентов, не имеет свечи зажигания, что
+                увеличивает ресурс работы отопителей Вебасто.<br> - Webasto в России создала широкую дилерскую сеть с
+                независимыми складами и сервисными центрами, что обеспечивает удобное обслуживание отопителей Вебасто и
+                наличие запчастей и комплектующих в любом удобном месте на территории России.<br> - И конечно же важно,
+                что
+                предпусковой отопитель Webasto выбран в качестве штатного оборудования многими автопроизводителями,
+                например Мерседес и БМВ
+              </p>
+            </li>
+            <li class="accordion-item">
+              <h3 class="accordion-item-head">2. В чем отличие предпусковых подогревателей двигателя и воздушных
+                отопителей Eberspacher от конкурентов? </h3>
+              <p class="accordion-item__content">
+                - Цена комплекта отопителя Эберспехер несколько ниже стоимости других немецких аналогов
+                <br>
+                - Существует разнесенная модификация предпусковых подогревателей двигателя Эберспехер, что дает
+                возможность установки
+                отопителя даже на сверхкомпактные автомобили.<br> - И конечно же важно, что предпусковой отопитель
+                Эберспехер выбран в качестве штатного оборудования многими автопроизводителями, например Volvo и Ford
+              </p>
+            </li>
+          </ul>
+        </article>
+        <article class="stock__items">
+          <article class="stock">
+            <span class="stock__pseudo">АКЦИЯ</span>
+            <b class="stock__name">WEBASTO</b>
+            <h3>ЭКОНОМЬ В УДОВОЛЬСТВИЕ!<br> Специальная цена на комплект и <br>установку отопителей Webasto</h3>
+            <p>Цена комплекта отопителя c установкой для предпусковых подогревателей</p>
+            <p>
+              <span>Webasto Thermo Top Start 35 (5кВт)</span>
+              <span class="stock__price">900р</span>
+            </p>
+            <p>
+              <span>Webasto Thermo Top Comfort+ (5кВт)</span>
+              <span class="stock__price">53 700р</span>
+            </p>
+          </article>
+          <article class="stock">
+            <span class="stock__pseudo">АКЦИЯ</span>
+            <b class="stock__name">EBERSPACHER</b>
+            <h3>НОВЕЙШАЯ ТЕХНОЛОГИЯ ТЕПЛА! Специальная цена на комплект и установку отопителей
+              Eberspacher
+            </h3>
+            <p>Цена комплекта отопителя c установкой для предпусковых подогревателей</p>
+            <p>
+              <span>EBERSPACHER HYDRONIC 3 (4кВт) <br>Для прогрева двигателя и салона малокубатурных автомобилей</span>
+              <span class="stock__price">39 900р</span>
+            </p>
+          </article>
+        </article>
+        <div class="modal__btn stock__btn">
+          <a href="" data-modal-target="#modal">Записаться</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- footer -->
+  <footer id="footer">
+    <div class="footer__items container">
+      <div class="footer__item">
+        <picture class="logo">
+          <img src="img/logos/logo.png" alt="Логотип автоклиматика">
+        </picture>
+        <figcaption>автоклиматика</figcaption>
+      </div>
+      <nav class="footer__item">
+        <ul class="footer__menu__items">
+          <li><a href="" aria-current="page">Главная</a></li>
+          <li><a href="">Каталог</a></li>
+          <li><a href="">Контакты</a></li>
+          <li><a href="">Доставка и оплата</a></li>
+          <li><a href="">FAQ</a></li>
+        </ul>
+      </nav>
+      <address class="footer__item">
+        <a class="icon__link mail" href="mailto:info@diavia.ru" target="_blank">info@diavia.ru</a>
+        <br>
+        <p class="icon__link phone">
+          <a href="tel:+7(495)7412445">+7 (495) 741-24-45</a><br>
+          <a href="tel:+7(495)1429654">+7 (495) 142-96-54</a>
+        </p>
+        <a href="" class="icon__link location" target="_balnk">г.Москва, ул. Авиамоторная, д.48</a>
+        <a href="" class="icon__link location" target="_balnk">г.Москва, МКАД 74 км, д.5<br> (внешняя сторона)</a>
+        <picture class="card__icon">
+          <img src="img/icon/mastercard.png" alt="логотип mastercard">
+          <img src="img/icon/maestro.png" alt="логотип maestro">
+          <img src="img/icon/visa.png" alt="логотип visa">
+        </picture>
+      </address>
+    </div>
+    <div class="footer__signature container">
+      <small>2020 Разработка сайтов <a href="https://div-head.ru/" target="_blank">div-head.ru</a>.Все права
+        защищены</small>
+    </div>
+  </footer>
+
+  <script src="js/jquery/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

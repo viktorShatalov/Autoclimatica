@@ -137,7 +137,6 @@ jQuery(document).ready(function ($) {
   jQuery(".accordion-item__content").hide();
 
   jQuery(".accordion-item-head").on("click", function () {
-    jQuery(this).next().slide(500);
     jQuery(this).toggleClass("active");
   });
 
@@ -165,4 +164,13 @@ jQuery(document).ready(function ($) {
   jQuery(".aws-search-clear").css({
     right: "40px",
   });
+});
+// scroll
+jQuery(window).scroll(function () {
+  if (jQuery(window).scrollTop() > 150) {
+    jQuery(".header__bottom__row,#header").addClass("active");
+  }
+  if (jQuery(window).scrollTop() < 150) {
+    jQuery(".header__bottom__row,#header").removeClass("active");
+  }
 });
