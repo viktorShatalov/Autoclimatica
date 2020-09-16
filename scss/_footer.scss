@@ -57,6 +57,11 @@
     a {
       font-size: 20px;
       line-height: 23px;
+      @include transition;
+      &[aria-current="page"],
+      &:hover {
+        color: rgb(255, 61, 0) !important;
+      }
     }
   }
 }

@@ -2,29 +2,43 @@ jQuery(document).ready(function ($) {
   //  mobile-menu
 
   jQuery(".burger").click(function () {
-    jQuery(".burger,.header__bottom-menu").toggleClass("active");
-    if (jQuery(".mobile__content,.mobile__content-social").hasClass("active")) {
-      jQuery(".mobile__content,.mobile__content-social").removeClass("active");
-    }
+    jQuery(".burger,.header__menu").toggleClass("active");
+    jQuery("body,html").toggleClass("lock");
   });
 
   // category dropdown menu
   if (window.innerWidth > 425) {
   }
 
-  if (window.innerWidth >= 320 && window.innerWidth <= 768) {
-    // переношу мобильный контент
+  // resize
+  // jQuery(window).resize(function () {
+  if (jQuery(window).width() < 768) {
     // slideUp category
-    jQuery(".heating__systems .head").on("click", function () {
+
+    jQuery(".category__navigation nav ul li").hide();
+    jQuery(".heating__systems .head").on("click", function (e) {
       jQuery(".heating__systems ul").children().slideToggle("slow");
+      e.preventDefault();
     });
-    jQuery(".сooling__systems .head").on("click", function () {
+    jQuery(".сooling__systems .head").on("click", function (e) {
       jQuery(".сooling__systems ul").children().slideToggle("slow");
+      e.preventDefault();
     });
-    jQuery(".equipment .head").on("click", function () {
+    jQuery(".equipment .head").on("click", function (e) {
       jQuery(".equipment ul").children().slideToggle("slow");
+      e.preventDefault();
     });
+
+    let cart = document.querySelector("#cart");
+    let mobileHeader = document.querySelector("section.header__center__row");
+    mobileHeader.prepend(cart);
+
+    jQuery(".first__slider__btn a").html("заказать звонок");
+
+    jQuery(".category__product-items").prepend(jQuery("#second__screen h2"));
+    jQuery(".footer__item:nth-child(1)").append(jQuery(".card__icon"));
   }
+  // });
   // accordion
 
   jQuery(".accordion-item__content:not(:first)").hide();
@@ -83,7 +97,7 @@ jQuery(document).ready(function ($) {
     infinite: true,
     arrows: false,
     dots: true,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 4000,
   });
 
@@ -140,12 +154,6 @@ jQuery(document).ready(function ($) {
     jQuery(this).toggleClass("active");
   });
 
-  // let btn = jQuery(".button__add_to_cart");
-  // if (btn.text() === "нет в наличии") {
-  //   btn.css({
-  //     background: "none",
-  //   });
-  // }
   jQuery(".aws-container .aws-search-form").css({
     height: "35px",
   });

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>статейник автоклиматика</title>
+  <link rel="shortcut icon" href="" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- modal -->
+  <div class="modal " id="modal">
+    <div class="modal-body">
+      <div data-close-button class="close-button">
+        <span></span>
+      </div>
+      <div class="modal__content">
+        <span class="modal__content-head">Мы перезвоним Вам сами</span>
+        <form>
+          <input type="text" name="name" placeholder="Имя">
+          <input type="tel" name="phone" placeholder="Номер телефона">
+          <textarea name="massege" placeholder="Сообщение"></textarea>
+          <input type="submit" value="Отправить">
+        </form>
+      </div>
+    </div>
+  </div>
+  <div id="overlay"></div>
+  <!-- header -->
+  <header id="header">
+    <section class="header__top__row container">
+      <div class="header__search">
+        <form>
+          <label class="header__search-description">Быстрый поиск</label>
+          <input type="s" name="search" placeholder="Введите номер/название запчасти">
+          <button></button>
+        </form>
+      </div>
+    </section>
+    <section class="header__center__row container">
+      <div class="header__logo">
+        <picture class="logo">
+          <img src="img/logos/logo.png" alt="Логотип автоклиматика">
+        </picture>
+        <figcaption>автоклиматика</figcaption>
+        <div class="header__logo-bottom">
+          <picture class="left__img">
+            <img src="img/logos/logo_partners2.png" alt="логотип партнеров">
+          </picture>
+          <span>Официальный<br> дилер</span>
+          <picture class="right__img">
+            <img src="img/logos/logo_partners1.png" alt="логотип партнеров">
+          </picture>
+        </div>
+      </div>
+      <div class="header__center__row-description">
+        <span>Комфорт в вашем автомобиле</span>
+      </div>
+      <div class="burger"><span></span></div>
+    </section>
+    <section class="header__bottom__row container">
+      <nav class="header__menu">
+        <ul class="menu__items">
+          <li><a href="" aria-current="page">Главная</a></li>
+          <li><a href="">Каталог</a></li>
+          <li><a href="">Контакты</a></li>
+          <li><a href="">Доставка и оплата</a></li>
+          <li><a href="">FAQ</a></li>
+        </ul>
+        <div class="first__slider__btn">
+          <a href="" data-modal-target="#modal">Записаться на<br> установку</a>
+        </div>
+      </nav>
+      <div id="cart" class="cart">
+        <a href="">
+          <button class="cart__btn">
+            <picture>
+              <img src="img/icon/cart.png" alt="картинка корзины интернет магазина автоклиматика">
+            </picture>
+            <span class="basket-btn__counter">1</span>
+          </button>
+        </a>
+      </div>
+    </section>
+  </header>
+  <!-- main -->
+  <main>
+    <!-- blog -->
+    <section id="category" class="container blog">
+      <div class="heading">
+        <h1>
+          Отопители.<br> Кондиционеры.<br> Автомобильные люки.
+        </h1>
+      </div>
+      <section class="category__content">
+        <aside class="left__sidebar">
+          <section class="left__sidebar-decoration">
+            <section class="category__navigation">
+              <nav class="heating__systems">
+                <div class="head">
+                  <a href="">Отопители</a>
+                </div>
+                <ul>
+                  <li><a href="">Автономные отопители Webasto / Вебасто</a></li>
+                  <li><a href="">Автономные отопители Eberspacher / Эберспехер</a></li>
+                  <li><a href="">Автомобильные отопители DEFA</a></li>
+                  <li><a href="">Оптовые предложения Webasto и Eberspacher</a></li>
+                </ul>
+              </nav>
+              <nav class="сooling__systems">
+                <div class="head">
+                  <a href="">Автокондиционеры</a>
+                </div>
+                <ul>
+                  <li><a href="">Заправка и ремонт автокондиционеров</a></li>
+                  <li><a href="">Ремонт компрессора автокондиционера</a></li>
+                  <li><a href="">Кондиционеры для автобусов и спецтехники</a></li>
+                  <li><a href="">Рефрежираторы</a></li>
+                </ul>
+              </nav>
+              <nav class="equipment">
+                <div class="head">
+                  <a href="">Оборудование</a>
+                </div>
+                <ul>
+                  <li><a href="">Подогрев сидений</a></li>
+                  <li><a href="">Подогрев дизельного топлива</a></li>
+                  <li><a href="">Автомобильные люки</a></li>
+                </ul>
+              </nav>
+            </section>
+          </section>
+        </aside>
+        <section class="right__content">
+          <section class="right__content-top">
+            <span></span>
+            <span>
+              <picture>
+                <img src="img/logos/logo_partners1.png" alt="Логотип webastо">
+              </picture>
+            </span>
+            <span>
+              <picture>
+                <img src="img/logos/logo_partners2.png" alt="Логотип eberspatche">
+              </picture>
+            </span>
+            <span></span>
+          </section>
+          <!-- breadcumps -->
+          <nav id="breadcumbs">
+            <ul class="container">
+              <li>
+                <a href="#">Главная</a>
+              </li>
+              <li>
+                <a href="#">Каталог</a>
+              </li>
+              <li>
+                <a href="#">next page</a>
+              </li>
+            </ul>
+          </nav>
+          <nav class="blog__menu">
+            <h2>Все статьи</h2>
+            <ul class="blog__menu-items">
+              <li><a href="">Предпусковые подогреватели двигателя Вебасто</a></li>
+              <li><a href="">Воздушные отопители Вебасто</a></li>
+              <li><a href="">Органы управления Вебасто</a></li>
+              <li><a href="">Каталог запчастей Вебасто</a></li>
+              <li><a href="">Цены на установку и ремонт отопителей Вебасто</a></li>
+              <li><a href="">Принцип работы отопителей Webasto</a></li>
+              <li><a href="">Инструкции по эксплуатации Вебасто</a></li>
+              <li><a href="">Предпусковые подогреватели двигателя Гидроник</a></li>
+              <li><a href="">Воздушные отопители Eberspacher / Эберспехер</a></li>
+              <li><a href="">Органы управления Эберспехер Гидроник / Аиртроник</a></li>
+              <li><a href="">Цены на установку и ремонт отопителей Эберспехер</a></li>
+              <li><a href="">Каталог запчастей Eberspacher / Эберспехер</a></li>
+              <li><a href="">Преимущества отопителей Defa</a></li>
+              <li><a href="">Установка отопителей Defa</a></li>
+              <li><a href="">Минусы уличной заправки автокондиционеров</a></li>
+              <li><a href="">Профессиональная заправка и ремонт автокондиционера</a></li>
+              <li><a href="">Профилактика автомобильных кондиционеров</a></li>
+              <li><a href="">Подшипники</a></li>
+              <li><a href="">Описание накрышного кондиционера</a></li>
+              <li><a href="">Кондиционеры Webasto</a></li>
+              <li><a href="">Кондиционеры Eurostar</a></li>
+              <li><a href="">Технические характеристики подогрева сидений</a></li>
+              <li><a href="">Цена подогрева сидений</a></li>
+              <li><a href="">Экспертная оценка подогрева сидений</a></li>
+              <li><a href="">Подъемные люки</a></li>
+              <li><a href="">Сдвижные люки</a></li>
+              <li><a href="">Типы автомобильных люков</a></li>
+            </ul>
+          </nav>
+        </section>
+      </section>
+      <section id="guarantee">
+        <article class="stock__items">
+          <article class="stock">
+            <span class="stock__pseudo">АКЦИЯ</span>
+            <b class="stock__name">WEBASTO</b>
+            <h3>ЭКОНОМЬ В УДОВОЛЬСТВИЕ!<br> Специальная цена на комплект и <br>установку отопителей Webasto</h3>
+            <p>Цена комплекта отопителя c установкой для предпусковых подогревателей</p>
+            <p>
+              <span>Webasto Thermo Top Start 35 (5кВт)</span>
+              <span class="stock__price">900р</span>
+            </p>
+            <p>
+              <span>Webasto Thermo Top Comfort+ (5кВт)</span>
+              <span class="stock__price">53 700р</span>
+            </p>
+          </article>
+          <article class="stock">
+            <span class="stock__pseudo">АКЦИЯ</span>
+            <b class="stock__name">EBERSPACHER</b>
+            <h3>НОВЕЙШАЯ ТЕХНОЛОГИЯ ТЕПЛА! Специальная цена на комплект и установку отопителей
+              Eberspacher
+            </h3>
+            <p>Цена комплекта отопителя c установкой для предпусковых подогревателей</p>
+            <p>
+              <span>EBERSPACHER HYDRONIC 3 (4кВт) <br>Для прогрева двигателя и салона малокубатурных автомобилей</span>
+              <span class="stock__price">39 900р</span>
+            </p>
+          </article>
+        </article>
+        <div class="modal__btn stock__btn blog">
+          <a href="" data-modal-target="#modal">Записаться</a>
+        </div>
+      </section>
+      <article class="blog__bottom">
+        <p>Наши профессиональные мастера всегда рады помочь вам при ремонте автокондиционера или автономных отопителей
+          Webasto ( Вебасто ) или Eberspacher .
+          Время ожидания вы можете скоротать на комфортном диване за чтением журналов или просмотром телевизора. Кофе и
+          чай для наших клиентов бесплатно.</p>
+        <p>Звоните, ответим на все интересующие Вас вопросы! <a href="tel:+74957412445">+7(495) 741-24-45</a>
+      </article>
+    </section>
+  </main>
+  <!-- footer -->
+  <footer id="footer">
+    <div class="footer__items container">
+      <div class="footer__item">
+        <picture class="logo">
+          <img src="img/logos/logo.png" alt="Логотип автоклиматика">
+        </picture>
+        <figcaption>автоклиматика</figcaption>
+      </div>
+      <nav class="footer__item">
+        <ul class="footer__menu__items">
+          <li><a href="" aria-current="page">Главная</a></li>
+          <li><a href="">Каталог</a></li>
+          <li><a href="">Контакты</a></li>
+          <li><a href="">Доставка и оплата</a></li>
+          <li><a href="">FAQ</a></li>
+        </ul>
+      </nav>
+      <address class="footer__item">
+        <a class="icon__link mail" href="mailto:info@diavia.ru" target="_blank">info@diavia.ru</a>
+        <br>
+        <p class="icon__link phone">
+          <a href="tel:+7(495)7412445">+7 (495) 741-24-45</a><br>
+          <a href="tel:+7(495)1429654">+7 (495) 142-96-54</a>
+        </p>
+        <a href="" class="icon__link location" target="_balnk">г.Москва, ул. Авиамоторная, д.48</a>
+        <a href="" class="icon__link location" target="_balnk">г.Москва, МКАД 74 км, д.5<br> (внешняя сторона)</a>
+        <picture class="card__icon">
+          <img src="img/icon/mastercard.png" alt="логотип mastercard">
+          <img src="img/icon/maestro.png" alt="логотип maestro">
+          <img src="img/icon/visa.png" alt="логотип visa">
+        </picture>
+      </address>
+    </div>
+    <div class="footer__signature container">
+      <small>2020 Разработка сайтов <a href="https://div-head.ru/" target="_blank">div-head.ru</a>.Все права
+        защищены</small>
+    </div>
+  </footer>
+
+  <script src="js/jquery/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

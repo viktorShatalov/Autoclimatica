@@ -131,7 +131,11 @@
   align-items: flex-end;
   justify-content: flex-end;
 }
-
+.header__menu {
+  .first__slider__btn {
+    display: none;
+  }
+}
 .menu__items {
   @include flex;
   align-items: flex-end;
