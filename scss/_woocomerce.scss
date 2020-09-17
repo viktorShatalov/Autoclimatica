@@ -194,3 +194,55 @@
     padding-bottom: 50px;
   }
 }
+
+// pagination
+nav.woocommerce-pagination {
+  padding: 40px 0;
+  ul.page-numbers {
+    @include flex;
+    justify-content: center;
+    a {
+      display: inline-block;
+      width: 30px;
+      color: rgb(92, 92, 92);
+      @include transition;
+      &.prev {
+        width: 97px;
+      }
+    }
+    li {
+      a,
+      span {
+        display: block;
+        width: 27px;
+        height: 27px;
+        background-color: rgb(255, 255, 255);
+        border: 1px solid rgb(239, 242, 245);
+        border-radius: 1px;
+        @include transition;
+        margin: 0 5px;
+        color: rgb(92, 92, 92);
+        font-size: 14px;
+        padding: 6px 0px;
+        text-align: center;
+        &:hover {
+          background-color: rgb(3, 96, 148);
+          color: white;
+        }
+        &.current {
+          background-color: rgb(3, 96, 148);
+          color: white;
+        }
+        &.dots,
+        &.extend {
+          border: none;
+          padding: 10px 0 0;
+          &:hover {
+            background-color: transparent;
+            color: rgb(92, 92, 92);
+          }
+        }
+      }
+    }
+  }
+}

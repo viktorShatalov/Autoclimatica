@@ -2,17 +2,57 @@
   background-color: rgb(3, 96, 148);
   padding: 38px 0 65px;
   @include transition;
+  &.active {
+    .header__bottom__row {
+      position: fixed;
+      top: 0;
+      background-color: rgb(3, 96, 148);
+      z-index: 5;
+      width: 100%;
+      padding: 15px 0;
+      max-width: 100%;
+      align-items: center;
+      justify-content: center;
+    }
+    nav.header__menu {
+      margin: 0 40px 0 0;
+      width: 1000px;
+    }
+    #cart {
+      margin: 0;
+    }
+  }
 }
 .header__top__row {
   padding: 0;
   margin-bottom: 8px;
+  @include flex;
+  align-items: center;
+  justify-content: flex-end;
+  .icon__link {
+    @include flex;
+    margin-bottom: 0;
+    flex: 0 0 28%;
+    &::before {
+      top: -3px;
+      left: -30px;
+    }
+    a {
+      color: white;
+      &:first-child {
+        margin-right: 25px;
+      }
+    }
+    br {
+      display: none;
+    }
+  }
   .header__search {
     @include flex;
     align-items: baseline;
     justify-content: space-between;
-    max-width: 342px;
+    width: 342px;
     height: 28px;
-    margin-left: auto;
     position: relative;
     button {
       position: absolute;
@@ -130,6 +170,8 @@
   @include flex;
   align-items: flex-end;
   justify-content: flex-end;
+  padding: 0;
+  @include transition;
 }
 .header__menu {
   .first__slider__btn {
@@ -154,7 +196,7 @@
     }
     a {
       display: inline-block;
-      padding: 11px 17.5px;
+      padding: 11px 10px;
       font-size: 1.286em;
       color: white;
       @include transition;
@@ -166,7 +208,7 @@
   }
 }
 #cart {
-  margin: 0 30px 0 0;
+  margin: 0 15px 0 0;
   .cart__btn {
     display: block;
     background-color: transparent;
@@ -182,9 +224,9 @@
       position: absolute;
       right: -15px;
       top: -12px;
-      padding-top: 4px;
+      padding-top: 3px;
       background-color: rgb(255, 0, 0);
-      border: 1px solid #ffffff;
+      border: 2px solid #ffffff;
       border-radius: 50%;
       text-align: center;
       color: white;

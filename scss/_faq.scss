@@ -2,15 +2,15 @@
   padding-left: 40px;
 }
 #faq__page {
-  margin-bottom: 30px;
+  & > .container {
+    padding-bottom: 50px;
+  }
   h1,
   h2 {
-    color: rgb(0, 56, 255);
+    color: rgb(3, 96, 148);
     font-size: 18px;
+    line-height: 22px;
     text-transform: uppercase;
-  }
-  #breadcumbs {
-    margin: 20px 0;
   }
   article {
     margin-bottom: 70px;
@@ -52,7 +52,7 @@
   }
   .modal__btn.stock__btn {
     max-width: 200px;
-    margin: 0 auto 32px;
+    margin: 0 auto;
     a {
       text-align: center;
       width: 100%;

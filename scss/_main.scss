@@ -81,7 +81,7 @@
   background-image: url(../img/second-bg.png);
   background-repeat: no-repeat;
   background-position: center top;
-  background-size: contain;
+  background-size: 101%;
   &.container {
     padding: 0;
   }
@@ -153,8 +153,8 @@
   min-height: 72px;
   padding: 29px 0 0;
   text-align: center;
-  margin: 0 auto;
-  font-size: 18.5px;
+  margin: 60px auto 0;
+  font-size: 18px;
   text-transform: uppercase;
   color: rgb(255, 61, 0);
   border-radius: 6px;
@@ -171,7 +171,7 @@
 .second__screen-top__items {
   @include flex;
   justify-content: space-between;
-  padding: 17px 0 80px;
+  padding: 17px 5px 80px;
 }
 .second__screen-top__item {
   background-image: url(../img/triangle-bg-white-left.png);
@@ -207,6 +207,9 @@
     border: 1px solid rgb(119, 119, 119);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
   }
+}
+.category__description {
+  margin-top: 30px;
 }
 // guarantee
 #guarantee {
@@ -271,9 +274,9 @@
         width: 100%;
         display: inline-block;
         font-weight: bold;
-        font-size: 24px;
-        line-height: 28px;
-        padding: 12px 35px 0 110px;
+        font-size: 18px;
+        line-height: 22px;
+        padding: 18px 35px 0 115px;
         color: rgb(255, 255, 255);
         text-transform: uppercase;
         background-image: url(../img/modal-triangle-orange-hover.png);
@@ -326,8 +329,7 @@
       width: 100%;
       display: inline-block;
       font-weight: bold;
-      font-size: 14px;
-      line-height: 16px;
+      font-size: 18px;
       color: rgb(29, 71, 95);
       padding: 18px 0;
       border-radius: 5px;
@@ -525,14 +527,6 @@ map {
   margin-bottom: 20px;
 }
 .single__blog-article {
-  img {
-    float: right;
-    max-width: 200px;
-    object-fit: cover;
-    height: 100%;
-    margin-left: 15px;
-    margin-bottom: 15px;
-  }
   p {
     font-size: 16px;
     line-height: 18px;

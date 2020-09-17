@@ -16,6 +16,9 @@
   .conteiner {
     padding: 0 15px;
   }
+  main {
+    padding-top: 105px;
+  }
   //  Burger Menu *******************************************************************************************
   .burger {
     display: block;
@@ -24,7 +27,7 @@
     position: relative;
     right: 15px;
     top: 0;
-    z-index: 5;
+    z-index: 6;
     cursor: pointer;
     @include transition;
     span {
@@ -73,7 +76,7 @@
   .header__menu {
     position: absolute;
     width: 100vw;
-    height: 100vh;
+    height: 105vh;
     z-index: 4;
     top: 0;
     left: -100%;
@@ -83,7 +86,6 @@
     background-size: contain;
     background-position: center top 20%;
     @include transition;
-
     .first__slider__btn {
       text-align: center;
       display: block;
@@ -103,13 +105,12 @@
         padding-top: 20px;
       }
     }
-
     ul {
-      margin: 20% 22px 20%;
+      margin: 20% 22px 10%;
       li {
         margin: 0;
         width: 100%;
-        padding: 20px 0;
+        padding: 15px 0 10px;
         border-radius: 0 !important;
         border: none !important;
         border-bottom: 3px solid white !important;
@@ -118,6 +119,18 @@
           font-weight: bold;
           padding: 0;
         }
+      }
+    }
+    .icon__link {
+      width: 100%;
+      margin-top: 10%;
+      text-align: center;
+      a {
+        display: inline-block;
+        color: white;
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 10px;
       }
     }
     &.active {
@@ -130,14 +143,36 @@
       display: none;
     }
   }
-
   #header {
     padding: 15px 0;
+    transition: all 0.1s ease-in-out;
+    position: fixed;
+    width: 100%;
+    z-index: 7;
+    &.active {
+      padding: 0;
+      top: -8px;
+      .header__center__row {
+        margin: 0 !important;
+      }
+      .header__bottom__row {
+        padding: 0px 0 0;
+      }
+      nav.header__menu {
+        width: 100%;
+      }
+      #cart {
+        margin: 0 0 0 6px;
+      }
+    }
   }
-  .header__top__row,
+  .header__top__row .header__search,
   .header__center__row-description span,
   .right__content-top {
     display: none;
+  }
+  .header__top__row {
+    margin-bottom: 0;
   }
   .header__logo {
     background-image: none;
@@ -174,7 +209,7 @@
         width: 21px;
         height: 21px;
         font-size: 14px;
-        padding-top: 2px;
+        padding-top: 0px;
       }
     }
   }
@@ -194,13 +229,13 @@
   .first__slider__item {
     padding: 70px 0 0;
     min-height: 170px;
-    &.first {
+    &:nth-child(1) {
       background-image: url(../img/mobile/mobile-first__screen1.jpg) !important;
     }
-    &.second {
+    &:nth-child(2) {
       background-image: url(../img/mobile/mobile-first__screen2.jpg) !important;
     }
-    &.third {
+    &:nth-child(3) {
       background-image: url(../img/mobile/moble-first__screen3.jpg) !important;
     }
   }
@@ -260,6 +295,12 @@
         &:first-child {
           padding-top: 10px;
         }
+        a {
+          max-width: 100%;
+        }
+        &::after {
+          width: calc(100% - 10px);
+        }
       }
     }
     .сooling__systems .head {
@@ -270,6 +311,7 @@
       background-image: url(../img/mobile/mobile-triangle-bg-orange.png);
       height: 50px;
     }
+    .equipment__second .head,
     .equipment .head {
       background-image: url(../img/mobile/mobile-triangle-bg-grey.png);
       height: 50px;
@@ -509,6 +551,16 @@
       margin-bottom: 0;
     }
   }
+  .search-sort {
+    flex-wrap: wrap;
+    padding: 8px 10px;
+    .search {
+      margin: 0 0 10px;
+    }
+    select {
+      max-width: 218px;
+    }
+  }
   .heading {
     padding: 16px 10px 23px;
     h1 {
@@ -518,5 +570,166 @@
   }
   .category__description {
     padding: 0 15px;
+  }
+  #card__product #breadcumbs {
+    margin: 0;
+  }
+  .similar__products-items,
+  .recently__viewed-items {
+    .item {
+      margin: 0 15px;
+    }
+  }
+  .card__product-rigth {
+    .item__name {
+      font-size: 20px;
+      line-height: 24px;
+    }
+    .item__price {
+      font-size: 22px !important;
+      line-height: 26px !important;
+      width: 100%;
+    }
+  }
+  .card__product-img {
+    height: 250px;
+  }
+  .card__product-terms {
+    li {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+  .item__flex {
+    .button__add_to_cart {
+      margin: 30px auto 10px;
+    }
+  }
+  .cart__content,
+  .ordering__content {
+    padding-top: 20px;
+  }
+  .cart__heqding,
+  .ordering__heqding {
+    background-size: cover;
+    padding: 35px 0;
+    height: 115px;
+    h1 {
+      font-size: 24px;
+    }
+  }
+  .cart__content-head {
+    display: none;
+  }
+  .cart__item {
+    grid-template-areas:
+      "img name name"
+      "cnt prc del";
+    grid-template-columns: auto;
+  }
+  .cart__item-img {
+    grid-area: img;
+  }
+  .cart__item-name {
+    grid-area: name;
+  }
+  .cart__item-price {
+    grid-area: prc;
+  }
+  .cart__item-counter {
+    grid-area: cnt;
+  }
+  .cart__item-delete {
+    grid-area: del;
+  }
+  #faq__page {
+    .stock {
+      padding-top: 12px;
+      min-height: 280px;
+      margin-bottom: 15px;
+      h3 {
+        font-size: 18px;
+        line-height: 20px;
+      }
+      p {
+        font-size: 16px;
+        line-height: 18px;
+      }
+    }
+    .stock__pseudo {
+      width: 125px;
+      height: 28px;
+      font-size: 16px;
+      line-height: 18px;
+    }
+    .stock__name {
+      font-size: 18px;
+      line-height: 20px;
+      max-width: 160px;
+    }
+  }
+  .accordion-item__content {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .accordion-items {
+    padding-left: 0px;
+  }
+  .accordion-item-head {
+    padding-left: 20px;
+    &::after {
+      left: -10px;
+    }
+  }
+  .goToCatalog {
+    margin: 20px auto;
+  }
+  #contacts__page,
+  #delivery__payment-page {
+    // margin-top: -10px;
+    .container {
+      padding: 0 15px;
+    }
+  }
+  .contacts__page-about {
+    h2 {
+      padding-left: 0;
+      max-width: 100%;
+      margin: 0 auto 20px;
+      &::before {
+        width: 50px;
+        height: 50px;
+        left: -5px;
+        top: -15px;
+      }
+    }
+    ul {
+      padding-left: 20px;
+    }
+  }
+  .vacancy__left img {
+    margin-bottom: 20px;
+  }
+  #ordering__page {
+    #cartForm {
+      padding-bottom: 50px;
+      padding-top: 50px;
+    }
+  }
+  #category.blog {
+    .right__content {
+      padding: 0 15px;
+    }
+  }
+  .blog__menu-items {
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+  }
+  // woocomerce
+  .woocommerce {
+    .count-btns {
+      width: 70px;
+      height: 50px;
+    }
   }
 }

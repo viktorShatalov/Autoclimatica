@@ -80,7 +80,8 @@
 }
 .heating__systems,
 .сooling__systems,
-.equipment {
+.equipment,
+.equipment__second {
   .head {
     display: block;
     width: 100%;
@@ -116,7 +117,8 @@
     height: 94px;
   }
 }
-.equipment {
+.equipment,
+.equipment__second {
   .head {
     background-image: url(../img/triangle-bg-grey.png);
   }

@@ -11,7 +11,6 @@ jQuery(document).ready(function ($) {
   }
 
   // resize
-  // jQuery(window).resize(function () {
   if (jQuery(window).width() < 768) {
     // slideUp category
 
@@ -28,24 +27,30 @@ jQuery(document).ready(function ($) {
       jQuery(".equipment ul").children().slideToggle("slow");
       e.preventDefault();
     });
-
+    jQuery(".equipment__second .head").on("click", function (e) {
+      jQuery(".equipment__second ul").children().slideToggle("slow");
+      e.preventDefault();
+    });
+    let headerPhone = document.querySelector(".header__top__row .icon__link");
+    let mobileMenu = document.querySelector("nav.header__menu ");
     let cart = document.querySelector("#cart");
     let mobileHeader = document.querySelector("section.header__center__row");
+
     mobileHeader.prepend(cart);
+    mobileMenu.append(headerPhone);
 
     jQuery(".first__slider__btn a").html("заказать звонок");
 
     jQuery(".category__product-items").prepend(jQuery("#second__screen h2"));
     jQuery(".footer__item:nth-child(1)").append(jQuery(".card__icon"));
   }
-  // });
   // accordion
 
   jQuery(".accordion-item__content:not(:first)").hide();
 
   jQuery(".accordion-item-head").on("click", function () {
     jQuery(this).next().slideToggle(500);
-    jQuery(this).toggleClass("active");
+    jQuery(this).next().toggleClass("active");
   });
   // modal
 
@@ -97,8 +102,8 @@ jQuery(document).ready(function ($) {
     infinite: true,
     arrows: false,
     dots: true,
-    autoplay: false,
-    autoplaySpeed: 4000,
+    autoplay: true,
+    autoplaySpeed: 3500,
   });
 
   jQuery(".similar__products-items").slick({
@@ -118,7 +123,9 @@ jQuery(document).ready(function ($) {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
+          centerMode: true,
+          variableWidth: true,
         },
       },
     ],
@@ -140,7 +147,8 @@ jQuery(document).ready(function ($) {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
+          centerMode: true,
         },
       },
     ],
