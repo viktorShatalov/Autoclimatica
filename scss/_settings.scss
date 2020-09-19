@@ -232,3 +232,48 @@ ins {
 .woof_submit_search_form_container {
   margin-bottom: 0;
 }
+.wpcf7-form-control-wrap {
+  width: 100%;
+  max-width: 260px;
+  text-align: center;
+  margin: 0 auto;
+}
+.wpcf7-not-valid-tip {
+  position: absolute;
+  left: 0;
+  bottom: -12px;
+  width: 100%;
+  text-align: right;
+}
+.wpcf7 form .wpcf7-response-output {
+  margin: 0 auto;
+}
+.wpcf7 form.invalid .wpcf7-response-output {
+  display: none !important;
+}
+.error-404 {
+  min-height: 500px;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 20px 0;
+  background-image: url(../img/404.png);
+  background-image: url(../img/404.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  h1 {
+    font-size: 40px;
+    margin: 0 0 40px;
+    line-height: 44px;
+    color: rgb(29, 71, 95);
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+  }
+  p {
+    font-size: 18px;
+    color: rgb(51, 51, 51);
+    line-height: 22px;
+    text-align: center;
+  }
+}

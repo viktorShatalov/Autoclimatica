@@ -11,7 +11,7 @@ jQuery(document).ready(function ($) {
   }
 
   // resize
-  if (jQuery(window).width() < 768) {
+  if (jQuery(window).width() < 769) {
     // slideUp category
 
     jQuery(".category__navigation nav ul li").hide();
