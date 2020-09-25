@@ -14,7 +14,10 @@
     content: none;
   }
   #header.active nav.header__menu {
-    width: 800px;
+    width: 545px;
+  }
+  #header.active .header__search {
+    margin: 0;
   }
   .cart__heqding,
   .ordering__heqding {
@@ -158,6 +161,9 @@
   }
   main {
     padding-top: 105px;
+  }
+  #header.active .header__bottom__row .header__search {
+    display: none;
   }
   //  Burger Menu *******************************************************************************************
   .burger {
@@ -717,8 +723,11 @@
   .category__description {
     padding: 0 15px;
   }
-  #card__product #breadcumbs {
-    margin: 0;
+  #card__product {
+    padding-top: 105px;
+    #breadcumbs {
+      margin: 0;
+    }
   }
   .similar__products-items,
   .recently__viewed-items {

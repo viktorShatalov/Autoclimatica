@@ -360,7 +360,7 @@
     position: relative;
     img {
       height: 100%;
-      object-fit: cover;
+      object-fit: contain;
       @include transition;
     }
     .item__product__availability {
@@ -404,7 +404,7 @@
 .button__add_to_cart {
   display: block;
   width: 100%;
-  min-height: 56px;
+  min-height: 50px;
   max-width: 200px;
   background: linear-gradient(
     180deg,
@@ -421,7 +421,7 @@
   line-height: 1;
   margin: 0 auto 10px;
   border-radius: 5px;
-  padding: 18px 0;
+  padding: 15px 0;
   position: relative;
   z-index: 1;
   &::after {
@@ -454,8 +454,18 @@
     color: rgb(29, 71, 95);
     background: transparent;
     border: 3px solid rgb(3, 96, 148);
+    position: relative;
     &::after {
       opacity: 0;
+    }
+    &::before {
+      content: "Добавленно";
+      position: absolute;
+      top: 15px;
+      text-align: center;
+      width: 100%;
+      background-color: white;
+      left: 0;
     }
   }
   &.disabled {
@@ -475,6 +485,7 @@
 }
 .aws-container .aws-search-field {
   border-radius: 5px !important;
+  height: 35px;
 }
 .show__more,
 .wpap-loadmore-button {

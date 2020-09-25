@@ -96,6 +96,49 @@ jQuery(document).ready(function ($) {
   modal();
   // sliders
 
+  // card-product slider
+
+  jQuery(".slider-for").slick({
+    arrows: true,
+    dots: false,
+    autoplay: false,
+    asNavFor: ".slider-nav",
+    fade: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    draggable: false,
+    responsive: [
+      {
+        breakpoint: 480,
+        settings: {
+          draggable: false,
+        },
+      },
+    ],
+  });
+
+  jQuery(".slider-nav").slick({
+    arrows: false,
+    dots: false,
+    infinite: false,
+    asNavFor: ".slider-for",
+    slidesToShow: 5,
+    slidesToScroll: 5,
+    infinite: false,
+    autoplay: false,
+    focusOnSelect: true,
+    draggable: false,
+    responsive: [
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 5,
+          slidesToScroll: 2,
+        },
+      },
+    ],
+  });
+
   jQuery(".first__slider").slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -183,7 +226,7 @@ jQuery(document).ready(function ($) {
 });
 // scroll
 jQuery(window).scroll(function () {
-  if (jQuery(window).scrollTop() > 150) {
+  if (jQuery(window).scrollTop() >= 150) {
     jQuery(".header__bottom__row,#header").addClass("active");
   }
   if (jQuery(window).scrollTop() < 150) {

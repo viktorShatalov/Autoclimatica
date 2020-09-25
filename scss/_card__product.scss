@@ -145,3 +145,35 @@
 #recently__viewed {
   padding-bottom: 35px;
 }
+
+.slider-for {
+  margin-bottom: 10px;
+  .card__product-img {
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .slick-prev::before {
+    top: 13px;
+  }
+  .slick-next::before {
+    bottom: 14px;
+  }
+}
+.slider-nav {
+  margin-bottom: 20px;
+  .slider-nav__img {
+    cursor: pointer;
+    margin: 0 4px;
+    border: 1px solid black;
+    border-radius: 11px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 11px;
+    }
+  }
+}

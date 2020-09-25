@@ -30,7 +30,14 @@ main {
     background-color: white;
   }
 }
-
+del {
+  display: block;
+}
+ins {
+  text-decoration: none;
+  color: red;
+  font-size: 22px;
+}
 form {
   width: 100%;
 }
@@ -204,7 +211,35 @@ ins {
   cursor: pointer;
   width: 100%;
 }
+.woof_checkbox_featured_container {
+  position: relative;
+  &::before {
+    content: "Все товары";
+    position: absolute;
+    font-weight: bold;
+    top: -20px;
+  }
+}
+.woof_checkbox_featured_container,
+.woof_checkbox_instock_container {
+  border: 1px solid rgb(51, 51, 51);
+  position: relative;
+  height: 26px;
+  margin: 21px 0px 0 5px;
+  max-width: 275px;
+
+  label {
+    padding: 5px 0 0 14px;
+  }
+  input[type="checkbox"] + label::before {
+    left: 3px;
+  }
+  input[type="checkbox"] + label::after {
+    left: 6px;
+  }
+}
 .woof_container_inner {
+  position: relative;
   h4 {
     display: inline-block;
     margin-bottom: 5px;
@@ -232,6 +267,8 @@ ins {
 .woof_submit_search_form_container {
   margin-bottom: 0;
 }
+// contact-form7
+
 .wpcf7-form-control-wrap {
   width: 100%;
   max-width: 260px;

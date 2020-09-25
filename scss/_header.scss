@@ -13,13 +13,18 @@
       max-width: 100%;
       align-items: center;
       justify-content: center;
+      .header__search {
+        display: flex;
+      }
     }
     nav.header__menu {
-      margin: 0 40px 0 0;
-      width: 1000px;
+      width: 650px;
     }
     #cart {
       margin: 0;
+    }
+    .header__search {
+      margin: 0 50px;
     }
   }
 }
@@ -47,24 +52,26 @@
       display: none;
     }
   }
-  .header__search {
-    @include flex;
-    align-items: baseline;
-    justify-content: space-between;
-    width: 342px;
-    height: 28px;
-    position: relative;
-    button {
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
-    .header__search-description {
-      font-size: 14px;
-      color: white;
-      width: 100%;
-      max-width: 105px;
-    }
+}
+.header__search {
+  @include flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 342px;
+  height: 28px;
+  position: relative;
+  button {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .header__search-description {
+    font-size: 14px;
+    line-height: 20px;
+    color: white;
+    width: 100%;
+    max-width: 105px;
+    height: 100%;
   }
   .aws-container {
     max-width: 227px;
@@ -90,7 +97,6 @@
     background-color: white;
   }
 }
-
 .header__center__row {
   background-color: rgb(29, 71, 95);
   position: relative;
@@ -172,6 +178,9 @@
   justify-content: flex-end;
   padding: 0;
   @include transition;
+  .header__search {
+    display: none;
+  }
 }
 .header__menu {
   .first__slider__btn {
@@ -203,6 +212,9 @@
       &[aria-current="page"],
       &:hover {
         color: rgb(255, 61, 0);
+      }
+      &[aria-current="page"] {
+        font-weight: bold;
       }
     }
   }
